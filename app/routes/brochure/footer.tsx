@@ -10,7 +10,7 @@ export function FooterSection() {
         <div>
           <div className="flex items-center gap-2 mb-6">
             <img alt="Concilio Sarralde" src="./assets/logo-white.png" className="h-[28px]" />
-            <div className="text-[14px] font-bold tracking-[2px] uppercase text-white">
+            <div className="text-[14px] font-bold tracking-[2px] uppercase text-dark">
               Concilio <Amp /> Sarralde
             </div>
           </div>
@@ -22,9 +22,9 @@ export function FooterSection() {
         <div>
           <div className="mb-4 text-[10px] font-bold uppercase tracking-[3px] text-gold">Sedes</div>
           <div className="text-[13px] leading-[2.2] text-[#e0e0e0]">
-            <strong className="text-white">Tucumán</strong><br />
+            <strong className="text-dark">Tucumán</strong><br />
             San Martín 536, Piso 3 · CP 4000<br />
-            <strong className="text-white">Buenos Aires</strong><br />
+            <strong className="text-dark">Buenos Aires</strong><br />
             Av. Santa Fe 1621 · CP 1060
           </div>
         </div>

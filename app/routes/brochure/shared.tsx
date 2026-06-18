@@ -10,9 +10,9 @@ export function SectionEyebrow({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function SectionTitle({ children, light }: { children: React.ReactNode; light?: boolean }) {
+export function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className={`mb-5 text-[clamp(28px,3.5vw,50px)] font-bold leading-[1.08] tracking-[-0.5px] ${light ? "text-white" : "text-dark"}`}>
+    <h2 className="mb-5 text-[clamp(28px,3.5vw,50px)] font-bold leading-[1.08] tracking-[-0.5px] text-dark">
       {children}
     </h2>
   );
@@ -44,7 +44,7 @@ export function PageSection({
 export function Stat({ value, label }: { value: React.ReactNode; label: string }) {
   return (
     <div className="border-b border-[#e0e0e0] pb-4 md:mr-12 md:border-b-0 md:border-r md:pr-12 print:mr-8 print:border-b-0 print:border-r print:pr-8">
-      <div className="text-[44px] font-bold leading-none text-white md:text-dark print:text-dark">{value}</div>
+      <div className="text-[44px] font-bold leading-none text-dark">{value}</div>
       <div className="mt-1.5 text-[11px] font-semibold uppercase tracking-[2px] text-[#aaa]">{label}</div>
     </div>
   );
@@ -76,7 +76,7 @@ export function SmallTag({ children }: { children: React.ReactNode }) {
 
 export function ServiceCard({ title, items }: { title: React.ReactNode; items: string[] }) {
   return (
-    <div className="cursor-default border-b border-r border-[#e0e0e0] border-t-2 border-t-transparent px-[22px] py-[26px] transition hover:border-t-gold hover:bg-dark [&:hover_.srv-name]:text-white [&:hover_li]:text-white/45">
+    <div className="cursor-default border-b border-r border-[#e0e0e0] border-t-2 border-t-transparent px-[22px] py-[26px] transition hover:border-t-gold hover:bg-dark [&:hover_.srv-name]:text-dark [&:hover_li]:text-dark/45">
       <div className="srv-name mb-3 text-[13px] font-bold text-dark">{title}</div>
       <ul className='list-none [&_li]:border-b [&_li]:border-black/[0.04] [&_li]:py-[3px] [&_li]:text-[13px] [&_li]:leading-[1.6] [&_li]:text-[#888] [&_li:before]:text-gold [&_li:before]:content-["–_"]'>
         {items.map((item) => (
@@ -100,7 +100,7 @@ export function DifCard({ num, title, body, foot }: { num: string; title: React.
   return (
     <div className="border border-[#333] p-8">
       <div className="mb-2 text-[28px] font-bold text-gold">{num}</div>
-      <div className="mb-3 text-[15px] font-bold text-white">{title}</div>
+      <div className="mb-3 text-[15px] font-bold text-dark">{title}</div>
       <div className="mb-4 text-[13px] leading-[1.8] text-[#aaa]">{body}</div>
       <div className="text-[10px] font-bold uppercase tracking-[2px] text-gold">{foot}</div>
     </div>
