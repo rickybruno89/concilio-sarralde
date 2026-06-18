@@ -8,7 +8,7 @@ export function ARTSection() {
       <div className="grid grid-cols-1 items-start gap-10 border-t-[3px] border-gold pt-12 md:grid-cols-[1fr_2fr] print:grid-cols-[1fr_2fr]">
         <div>
           <div className="mb-4 text-[clamp(22px,2.5vw,36px)] font-bold leading-[1.15] text-dark">
-            Los únicos especialistas en Seguros <Amp /> ART de la región
+            Los únicos especialistas en Seguros y ART de la región
           </div>
         </div>
         <div>

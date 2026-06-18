@@ -62,7 +62,7 @@ export function AlianzasSection() {
       <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-[1fr_2fr] print:grid-cols-1">
         <div>
           <SectionEyebrow>Servicios</SectionEyebrow>
-          <SectionTitle>que ofrecemos</SectionTitle>
+          <SectionTitle>Soluciones que generan confianza y resultados.</SectionTitle>
           <GoldRule />
         </div>
         <div>

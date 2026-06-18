@@ -64,9 +64,7 @@ export const CLIENTES_PUBLICOS = [
 export const SERVICIOS = [
   {
     title: (
-      <>
-        Auditoría <Amp /> Control
-      </>
+      "Auditoría y Control"
     ),
     items: [
       "Control externo de EECC",
@@ -77,9 +75,7 @@ export const SERVICIOS = [
       "Auditoría operativa de procesos",
       "Certificaciones contables",
       "Balance Social",
-      <>
-        Seguros <Amp /> ART
-      </>,
+      "Seguros y ART",
     ],
   },
   {
@@ -103,18 +99,14 @@ export const SERVICIOS = [
       "Asesoramiento societario",
       "Compliance legal",
       "Disolución de sociedades",
-      <>
-        Actas Directorio <Amp /> Asamblea
-      </>,
+      "Actas Directorio y Asamblea",
       "Presentaciones ante IGJ",
       "Conflictos societarios",
     ],
   },
   {
     title: (
-      <>
-        Outsourcing <Amp /> RRHH
-      </>
+      "Outsourcing y RRHH"
     ),
     items: [
       "Outsourcing contable",
@@ -142,7 +134,7 @@ export const SERVICIOS = [
   {
     title: (
       <>
-        M<Amp />A <Amp /> Emprendedores
+        M<Amp />A y Emprendedores
       </>
     ),
     items: [
@@ -200,20 +192,12 @@ export const VALORES = [
       "La mejor forma de lograr objetivos con la máxima calidad posible y en los tiempos acordados.",
   },
   {
-    title: (
-      <>
-        Integridad, Ética <Amp /> Calidad Humana
-      </>
-    ),
+    title: "Integridad, Ética y Calidad Humana",
     description:
       "Los cimientos de nuestros trabajos, orientados al prestigio y la seriedad durante y después de cumplidos los objetivos.",
   },
   {
-    title: (
-      <>
-        Transparencia <Amp /> Honestidad
-      </>
-    ),
+    title: "Transparencia y Honestidad",
     description:
       "Política totalmente transparente para con nuestro cliente, sin lugar a dudas en el alcance y la prestación de nuestros servicios.",
   },
