@@ -38,28 +38,27 @@ export const INDUSTRIAS = [
 ];
 
 export const CLIENTES_PRIVADOS = [
-  { alt: "The Coca-Cola Company", src: "./assets/coca-cola2.png" },
-  { alt: "EY Argentina", src: "./assets/ey.png" },
-  { alt: "Deloitte", src: "./assets/deloitte.png" },
-  { alt: "OSDE", src: "./assets/osde.png" },
-  { alt: "La Serenísima", src: "./assets/la-serenisima.png" },
-  { alt: "Coprotab", src: "./assets/coprotab.png" },
+  { name: "The Coca-Cola Company" },
+  { name: "EY Argentina", logo: "./assets/ey.png" },
+  { name: "Deloitte", logo: "./assets/deloitte.png" },
+  { name: "OSDE", logo: "./assets/osde.png" },
+  { name: "La Serenísima", logo: "./assets/la-serenisima.png" },
+  { name: "Coprotab", logo: "./assets/coprotab.png" },
   {
-    alt: "Colegio de Graduados en Ciencias Económicas de Tucumán",
-    src: "./assets/colegio-de-graduados.png",
+    name: "Colegio de Graduados en Cs. Económicas de Tucumán",
+    logo: "./assets/colegio-de-graduados.png",
   },
+  { name: "Club Atlético San Martín", logo: "./assets/san-martin.png" },
 ];
 
 export const CLIENTES_PUBLICOS = [
-  { alt: "Caja Popular de Ahorros", src: "./assets/cpa.png" },
-  { alt: "PopulART", src: "./assets/populart.png" },
-  { alt: "Caja popular de ahorros seguros", src: "./assets/cpa-seguros.png" },
+  { name: "Caja Popular de Ahorros", logo: "./assets/cpa.png" },
+  { name: "PopulART", logo: "./assets/populart.png" },
   {
-    alt: "Municipalidad de San Miguel de Tucumán",
-    src: "./assets/municipalidad-smt.png",
+    name: "Municipalidad de San Miguel de Tucumán",
+    logo: "./assets/municipalidad-smt.png",
   },
-  { alt: "CPM GIRSU", src: "./assets/cpm-girsu.png" },
-  { alt: "Club Atlético San Martin", src: "./assets/san-martin.png" },
+  { name: "CPM GIRSU", logo: "./assets/cpm-girsu.png" },
 ];
 
 export const SERVICIOS = [
@@ -79,7 +78,7 @@ export const SERVICIOS = [
       "Certificaciones contables",
       "Balance Social",
       <>
-        Seguros <Amp /> ART ↓
+        Seguros <Amp /> ART
       </>,
     ],
   },
@@ -241,15 +240,7 @@ export const DIFERENCIADORES = [
   {
     num: "03",
     title: "Únicos en la Región",
-    body: (
-      <>
-        La única firma de la región con equipo dedicado al control y
-        procedimientos acordados para Seguros <Amp /> ART. Inscriptos en el
-        Registro de Auditores Externos de la SSN y habilitados como Revisores
-        Externos Independientes (REI) ante la UIF — dos de los registros más
-        exigentes del sistema regulatorio argentino.
-      </>
-    ),
+    body: "La única firma de la región con equipo dedicado al control y procedimientos acordados para Segurosy ART. Inscriptos en el Registro de Auditores Externos de la SSN y habilitados como Revisores Externos Independientes (REI) ante la UIF — dos de los registros más exigentes del sistema regulatorio argentino.",
     foot: "SSN · UIF · ART",
   },
   {
@@ -266,11 +257,7 @@ export const DIFERENCIADORES = [
   },
   {
     num: "06",
-    title: (
-      <>
-        Sector Público <Amp /> Privado
-      </>
-    ),
+    title: "Sector Público y Privado",
     body: "Experiencia en organismos públicos y empresas privadas. Entendemos que los objetivos del sector público son distintos y adaptamos nuestra metodología a cada realidad.",
     foot: "Experiencia Transversal",
   },

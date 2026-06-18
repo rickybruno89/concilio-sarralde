@@ -35,7 +35,7 @@ export function QuienesSomosSection() {
               clientes es nuestro éxito."
             </div>
             <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
-              — Ezequiel Sarralde, Socio Fundador
+              — Ezequiel Sarralde; Socio Fundador.
             </div>
           </div>
           <p>

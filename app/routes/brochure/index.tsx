@@ -8,7 +8,7 @@ import { HeroSection } from "./components/hero";
 import { MapaSection } from "./components/mapa";
 import { MisionVisionSection } from "./components/mision-vision";
 import { QuienesSomosSection } from "./components/quienes-somos";
-import { ServiciosSection } from "./components/servicios";
+import { ServiciosDetalleSection } from "./components/serviciosDetalle";
 import { ValoresSection } from "./components/valores";
 
 export function meta() {
@@ -22,7 +22,7 @@ export default function BrochureRoute() {
       <HeroSection />
       <QuienesSomosSection />
       <AlianzasSection />
-      <ServiciosSection />
+      <ServiciosDetalleSection />
       <ARTSection />
       <MisionVisionSection />
       <DiferenciadoresSection />

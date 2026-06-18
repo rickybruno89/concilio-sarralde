@@ -7,8 +7,10 @@ export function DiferenciadoresSection() {
       <SectionEyebrow>Por qué elegirnos</SectionEyebrow>
       <SectionTitle>Lo que nos hace diferentes</SectionTitle>
       <GoldRule />
-      <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-3 print:grid-cols-3">
-        {DIFERENCIADORES.map((d) => <DifCard key={d.num} {...d} />)}
+      <div className="mt-8">
+        {DIFERENCIADORES.map((d) => (
+          <DifCard key={d.num} {...d} />
+        ))}
       </div>
     </section>
   );

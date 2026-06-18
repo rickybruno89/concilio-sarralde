@@ -62,7 +62,7 @@ export function Stat({
 
 export function ClientLogo({ alt, src }: { alt: string; src: string }) {
   return (
-    <div className="flex items-center justify-center border-r border-b border-[#e0e0e0] bg-white p-6 min-h-[110px]">
+    <div className="flex items-center justify-center p-6 min-h-[110px]">
       <img
         alt={alt}
         src={src}
@@ -96,11 +96,11 @@ export function ServiceCard({
   items: string[];
 }) {
   return (
-    <div className="cursor-default border-b border-r border-[#e0e0e0] border-t-2 border-t-transparent px-[22px] py-[26px] transition hover:border-t-gold hover:bg-dark [&:hover_.srv-name]:text-dark [&:hover_li]:text-dark/45">
+    <div className="cursor-default p-3 transition">
       <div className="srv-name mb-3 text-[15px] font-bold text-dark">
         {title}
       </div>
-      <ul className='list-none [&_li]:border-b [&_li]:border-black/[0.04] [&_li]:py-[3px] [&_li]:text-[15px] [&_li]:leading-[1.6] [&_li]:text-[#888] [&_li:before]:text-gold [&_li:before]:content-["–_"]'>
+      <ul className='list-none [&_li]:text-[15px] [&_li]:leading-[1.6] [&_li]:text-[#888] [&_li:before]:text-gold [&_li:before]:content-["–_"]'>
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
@@ -136,12 +136,15 @@ export function DifCard({
   foot: string;
 }) {
   return (
-    <div className="border border-[#333] p-8">
-      <div className="mb-2 text-[28px] font-bold text-gold">{num}</div>
-      <div className="mb-3 text-[16px] font-bold text-dark">{title}</div>
-      <div className="mb-4 text-[15px] leading-[1.8] text-[#aaa]">{body}</div>
-      <div className="text-[12px] font-bold uppercase tracking-[2px] text-gold">
-        {foot}
+    <div className="p-2">
+      <div className="flex items-center gap-4">
+        <div className="text-[22px] font-bold text-gold">
+          {num}
+          <span className="ml-5 text-[18px] font-bold text-gold">{foot}</span>
+        </div>
+      </div>
+      <div className="ml-12 mt-2 text-[15px] font-bold text-dark">
+        {title}: <span className="leading-[1.8] text-[#aaa]">{body}</span>
       </div>
     </div>
   );
