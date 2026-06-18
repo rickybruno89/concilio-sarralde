@@ -6,7 +6,7 @@ export function ARTSection() {
     <div className="relative overflow-hidden bg-[#f5f5f5] px-5 py-[88px] md:px-[52px] print:min-h-[297mm] print:w-[210mm] print:break-after-page print:px-[16mm] print:py-[18mm]">
       <div className="relative z-[1] grid grid-cols-1 items-start gap-[72px] border-t-[3px] border-gold pt-12 md:grid-cols-[1fr_2fr] print:grid-cols-[1fr_2fr]">
         <div>
-          <SectionEyebrow inverted>Especialización única</SectionEyebrow>
+          <SectionEyebrow>Especialización única</SectionEyebrow>
           <div className="mb-4 text-[clamp(22px,2.5vw,36px)] font-bold leading-[1.15] text-dark">
             Los únicos especialistas en Seguros <Amp /> ART de la región
           </div>

@@ -2,9 +2,9 @@ export function Amp() {
   return <span className="font-serif italic font-normal text-gold">&amp;</span>;
 }
 
-export function SectionEyebrow({ children, inverted }: { children: React.ReactNode; inverted?: boolean }) {
+export function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`mb-4 text-[13px] font-bold uppercase tracking-[4px] ${inverted ? "text-[#e8c05a]" : "text-gold"}`}>
+    <div className="mb-4 text-[13px] font-bold uppercase tracking-[4px] text-gold">
       {children}
     </div>
   );

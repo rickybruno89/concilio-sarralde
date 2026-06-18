@@ -1,7 +1,7 @@
 export function MapaSection() {
   return (
     <div className="overflow-hidden bg-dark px-5 py-[100px] md:px-[52px] print:min-h-[297mm] print:w-[210mm] print:break-after-page print:px-[16mm] print:py-[18mm]" id="global">
-      <div className="mb-4 text-[13px] font-bold uppercase tracking-[4px] text-[#e8c05a] text-center">Presencia internacional</div>
+      <div className="mb-4 text-[13px] font-bold uppercase tracking-[4px] text-gold text-center">Presencia internacional</div>
       <h2 className="mb-5 text-[clamp(28px,3.5vw,50px)] font-bold leading-[1.08] tracking-[-0.5px] text-white text-center">Alcance Global</h2>
       <div className="my-6 h-[3px] w-12 bg-gold mx-auto" />
       <p className="max-w-[640px] text-base font-light leading-[1.85] text-[#e0e0e0] text-center mx-auto">
