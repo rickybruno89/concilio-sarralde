@@ -38,7 +38,7 @@ export const INDUSTRIAS = [
 ];
 
 export const CLIENTES_PRIVADOS = [
-  { alt: "The Coca-Cola Company", src: "./assets/coca-cola.png" },
+  { alt: "The Coca-Cola Company", src: "./assets/coca-cola2.png" },
   { alt: "EY Argentina", src: "./assets/ey.png" },
   { alt: "Deloitte", src: "./assets/deloitte.png" },
   { alt: "OSDE", src: "./assets/osde.png" },
@@ -59,10 +59,7 @@ export const CLIENTES_PUBLICOS = [
     src: "./assets/municipalidad-smt.png",
   },
   { alt: "CPM GIRSU", src: "./assets/cpm-girsu.png" },
-  { alt: "Quiniela", src: "./assets/quiniela.png" },
-  { alt: "Hipodromo", src: "./assets/hipodromo.png" },
-  { alt: "Casino", src: "./assets/casino.png" },
-  { alt: "Tuqui 10", src: "./assets/tuqui.png" },
+  { alt: "Club Atlético San Martin", src: "./assets/san-martin.png" },
 ];
 
 export const SERVICIOS = [
