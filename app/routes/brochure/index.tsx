@@ -19,7 +19,7 @@ export function meta() {
 export default function BrochureRoute() {
   return (
     <main className="bg-white font-[Source_Sans_3,Arial,sans-serif] text-[#1a1a1a] print:bg-white">
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <QuienesSomosSection />
       <ClientesSection />

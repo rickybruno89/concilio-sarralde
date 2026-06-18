@@ -43,9 +43,9 @@ export function PageSection({
 
 export function Stat({ value, label }: { value: React.ReactNode; label: string }) {
   return (
-    <div className="border-b border-[#e0e0e0] pb-4 md:mr-12 md:border-b-0 md:border-r md:pr-12 print:mr-8 print:border-b-0 print:border-r print:pr-8">
-      <div className="text-[44px] font-bold leading-none text-dark">{value}</div>
-      <div className="mt-1.5 text-[11px] font-semibold uppercase tracking-[2px] text-[#aaa]">{label}</div>
+    <div className="border-b border-white/20 pb-4 md:mr-12 md:border-b-0 md:border-r md:border-white/20 md:pr-12 print:mr-8 print:border-b-0 print:border-r print:pr-8">
+      <div className="text-[44px] font-bold leading-none text-white">{value}</div>
+      <div className="mt-1.5 text-[11px] font-semibold uppercase tracking-[2px] text-white/60">{label}</div>
     </div>
   );
 }
