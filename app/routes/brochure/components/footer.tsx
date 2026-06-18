@@ -10,18 +10,18 @@ export function FooterSection() {
         <div>
           <div className="flex items-center gap-2 mb-6">
             <img alt="Concilio Sarralde" src="./assets/logo-white.png" className="h-[28px]" />
-            <div className="text-[14px] font-bold tracking-[2px] uppercase text-dark">
+            <div className="text-[16px] font-bold tracking-[2px] uppercase text-dark">
               Concilio <Amp /> Sarralde
             </div>
           </div>
-          <p className="text-[13px] leading-[1.8] text-[#e0e0e0]">
+          <p className="text-[15px] leading-[1.8] text-[#e0e0e0]">
             Firma boutique internacional de servicios profesionales en auditoría, consultoría tributaria, legal y outsourcing.
           </p>
         </div>
         {/* Col 2 – Sedes */}
         <div>
-          <div className="mb-4 text-[10px] font-bold uppercase tracking-[3px] text-gold">Sedes</div>
-          <div className="text-[13px] leading-[2.2] text-[#e0e0e0]">
+          <div className="mb-4 text-[12px] font-bold uppercase tracking-[3px] text-gold">Sedes</div>
+          <div className="text-[15px] leading-[2.2] text-[#e0e0e0]">
             <strong className="text-dark">Tucumán</strong><br />
             San Martín 536, Piso 3 · CP 4000<br />
             <strong className="text-dark">Buenos Aires</strong><br />
@@ -30,8 +30,8 @@ export function FooterSection() {
         </div>
         {/* Col 3 – Contacto */}
         <div>
-          <div className="mb-4 text-[10px] font-bold uppercase tracking-[3px] text-gold">Contacto</div>
-          <div className="text-[13px] leading-[2.2] text-[#e0e0e0]">
+          <div className="mb-4 text-[12px] font-bold uppercase tracking-[3px] text-gold">Contacto</div>
+          <div className="text-[15px] leading-[2.2] text-[#e0e0e0]">
             info@concilioysarralde.com<br />
             +54 381 421-1234<br />
             concilioysarralde.com<br />
@@ -40,10 +40,10 @@ export function FooterSection() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-between gap-2 pt-6 text-center md:flex-row print:flex-row mt-8">
-        <div className="text-[13px] text-[#e0e0e0]">
+        <div className="text-[15px] text-[#e0e0e0]">
           © 2026 Estudio Concilio <Amp /> Sarralde S.A.S. · Todos los derechos reservados
         </div>
-        <div className="text-[13px] text-[#e0e0e0]">
+        <div className="text-[15px] text-[#e0e0e0]">
           San Miguel de Tucumán · Buenos Aires · República Argentina
         </div>
       </div>

@@ -26,7 +26,7 @@ export function QuienesSomosSection() {
         </div>
         {/* Right column – Registros */}
         <div>
-          <div className="mb-[18px] text-[10px] font-bold uppercase tracking-[3px] text-[#bbb]">Habilitaciones y registros oficiales</div>
+          <div className="mb-[18px] text-[12px] font-bold uppercase tracking-[3px] text-[#bbb]">Habilitaciones y registros oficiales</div>
           <div className="flex flex-col gap-3">
             <RegistroCard
               logoAlt="SSN" logoSrc="./assets/ssn.png"

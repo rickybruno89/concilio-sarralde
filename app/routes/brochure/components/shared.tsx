@@ -4,7 +4,7 @@ export function Amp() {
 
 export function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-4 text-[13px] font-bold uppercase tracking-[4px] text-gold">
+    <div className="mb-4 text-[15px] font-bold uppercase tracking-[4px] text-gold">
       {children}
     </div>
   );
@@ -45,7 +45,7 @@ export function Stat({ value, label }: { value: React.ReactNode; label: string }
   return (
     <div className="border-b border-white/20 pb-4 md:mr-12 md:border-b-0 md:border-r md:border-white/20 md:pr-12 print:mr-8 print:border-b-0 print:border-r print:pr-8">
       <div className="text-[44px] font-bold leading-none text-white">{value}</div>
-      <div className="mt-1.5 text-[11px] font-semibold uppercase tracking-[2px] text-white/60">{label}</div>
+      <div className="mt-1.5 text-[13px] font-semibold uppercase tracking-[2px] text-white/60">{label}</div>
     </div>
   );
 }
@@ -60,7 +60,7 @@ export function ClientLogo({ alt, src }: { alt: string; src: string }) {
 
 export function Tag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-block text-[13px] font-semibold text-dark bg-[#f5f5f5] border border-[#e0e0e0] px-4 py-[7px]">
+    <span className="inline-block text-[15px] font-semibold text-dark bg-[#f5f5f5] border border-[#e0e0e0] px-4 py-[7px]">
       {children}
     </span>
   );
@@ -68,7 +68,7 @@ export function Tag({ children }: { children: React.ReactNode }) {
 
 export function SmallTag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="border border-[#dcdcdc] px-3 py-[5px] text-[10px] font-bold uppercase tracking-[1.5px] text-[#666]">
+    <span className="border border-[#dcdcdc] px-3 py-[5px] text-[12px] font-bold uppercase tracking-[1.5px] text-[#666]">
       {children}
     </span>
   );
@@ -77,8 +77,8 @@ export function SmallTag({ children }: { children: React.ReactNode }) {
 export function ServiceCard({ title, items }: { title: React.ReactNode; items: string[] }) {
   return (
     <div className="cursor-default border-b border-r border-[#e0e0e0] border-t-2 border-t-transparent px-[22px] py-[26px] transition hover:border-t-gold hover:bg-dark [&:hover_.srv-name]:text-dark [&:hover_li]:text-dark/45">
-      <div className="srv-name mb-3 text-[13px] font-bold text-dark">{title}</div>
-      <ul className='list-none [&_li]:border-b [&_li]:border-black/[0.04] [&_li]:py-[3px] [&_li]:text-[13px] [&_li]:leading-[1.6] [&_li]:text-[#888] [&_li:before]:text-gold [&_li:before]:content-["–_"]'>
+      <div className="srv-name mb-3 text-[15px] font-bold text-dark">{title}</div>
+      <ul className='list-none [&_li]:border-b [&_li]:border-black/[0.04] [&_li]:py-[3px] [&_li]:text-[15px] [&_li]:leading-[1.6] [&_li]:text-[#888] [&_li:before]:text-gold [&_li:before]:content-["–_"]'>
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
@@ -90,8 +90,8 @@ export function ServiceCard({ title, items }: { title: React.ReactNode; items: s
 export function ValueCard({ title, description }: { title: React.ReactNode; description: string }) {
   return (
     <div className="border-b border-r border-[#e0e0e0] p-[34px]">
-      <div className="mb-2.5 text-[15px] font-bold text-gold">{title}</div>
-      <div className="text-[13px] leading-[1.8] text-[#666]">{description}</div>
+      <div className="mb-2.5 text-[16px] font-bold text-gold">{title}</div>
+      <div className="text-[15px] leading-[1.8] text-[#666]">{description}</div>
     </div>
   );
 }
@@ -100,9 +100,9 @@ export function DifCard({ num, title, body, foot }: { num: string; title: React.
   return (
     <div className="border border-[#333] p-8">
       <div className="mb-2 text-[28px] font-bold text-gold">{num}</div>
-      <div className="mb-3 text-[15px] font-bold text-dark">{title}</div>
-      <div className="mb-4 text-[13px] leading-[1.8] text-[#aaa]">{body}</div>
-      <div className="text-[10px] font-bold uppercase tracking-[2px] text-gold">{foot}</div>
+      <div className="mb-3 text-[16px] font-bold text-dark">{title}</div>
+      <div className="mb-4 text-[15px] leading-[1.8] text-[#aaa]">{body}</div>
+      <div className="text-[12px] font-bold uppercase tracking-[2px] text-gold">{foot}</div>
     </div>
   );
 }
@@ -114,7 +114,7 @@ export function RegistroCard({ logoAlt, logoSrc, title, description }: { logoAlt
         <img alt={logoAlt} src={logoSrc} />
       </div>
       <div className="h-9 w-px shrink-0 bg-[#e0e0e0]" />
-      <div className="[&_strong]:mb-[3px] [&_strong]:block [&_strong]:text-[13px] [&_strong]:font-bold [&_strong]:text-dark [&_span]:text-xs [&_span]:leading-[1.6] [&_span]:text-[#888]">
+      <div className="[&_strong]:mb-[3px] [&_strong]:block [&_strong]:text-[15px] [&_strong]:font-bold [&_strong]:text-dark [&_span]:text-sm [&_span]:leading-[1.6] [&_span]:text-[#888]">
         <strong>{title}</strong>
         <span>{description}</span>
       </div>

@@ -14,7 +14,7 @@ export function ClientesSection() {
       </div>
 
       {/* Industrias */}
-      <div className="mb-5 text-[13px] font-bold uppercase tracking-[3px] text-gold">Industrias que atendemos</div>
+      <div className="mb-5 text-[15px] font-bold uppercase tracking-[3px] text-gold">Industrias que atendemos</div>
       <div className="border border-[#e0e0e0] p-7 mb-14">
         <div className="flex flex-wrap gap-2.5">
           {INDUSTRIAS.map((ind) => <Tag key={ind}>{ind}</Tag>)}
@@ -23,7 +23,7 @@ export function ClientesSection() {
 
       {/* Clientes y Alianzas */}
       <div className="mt-16">
-        <div className="mb-7 text-[13px] font-bold uppercase tracking-[3px] text-gold">Clientes y Alianzas</div>
+        <div className="mb-7 text-[15px] font-bold uppercase tracking-[3px] text-gold">Clientes y Alianzas</div>
 
         <div className="text-sm font-bold tracking-[3px] uppercase text-gold mb-4 mt-8">Sector Privado</div>
         <div className="grid grid-cols-2 border-l border-t border-[#e0e0e0] md:grid-cols-4 print:grid-cols-4">
