@@ -83,12 +83,16 @@ export function QuienesSomosSection() {
           Nuestra experiencia es transversal a todos los sectores
         </SectionTitle>
         <GoldRule />
-        <p className="text-base font-light leading-[1.85] text-[#666]">
-          Cada cliente es una historia de éxito distinta, y nosotros nos
-          enorgullecemos de haber sido parte de cada una de ellas a lo largo de
-          todo este tiempo. A continuación, les presentamos algunas de las
-          empresas y organizaciones con las que trabajamos.
-        </p>
+        <div className="my-7 border-l-[3px] border-gold bg-black/[0.02] px-7 py-5">
+          <div className="font-serif text italic leading-[1.85] text-[#333]">
+            "Cada cliente es una historia de éxito distinta, y nosotros nos
+            enorgullecemos de haber sido parte de cada una de ellas a lo largo
+            de todo este tiempo"
+          </div>
+          <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
+            — Cr. Ariel del Rivero, Asociado.
+          </div>
+        </div>
       </div>
 
       {/* Industrias */}

@@ -49,7 +49,7 @@ export function Stat({
   label: string;
 }) {
   return (
-    <div className="border-b border-white/20 pb-4 md:mr-12 md:border-b-0 md:border-r md:border-white/20 md:pr-12 print:mr-8 print:border-b-0 print:border-r print:pr-8">
+    <div className=" ">
       <div className="text-[44px] font-bold leading-none text-white">
         {value}
       </div>
@@ -165,7 +165,7 @@ export function RegistroCard({
         <strong>{title}</strong>
         <span>{description}</span>
         <div className="h-px w-full shrink-0 bg-[#e0e0e0] my-3" />
-        <div className={`w-80 ${entity === "UIF" ? "bg-[#232d4f] p-3" : ""}`}>
+        <div className={`w-40 ${entity === "UIF" ? "bg-[#232d4f] p-3" : ""}`}>
           <img
             alt={entity === "SSN" ? "SSN" : "UIF"}
             src={entity === "SSN" ? "./assets/ssn.png" : "./assets/uif.png"}
