@@ -1,16 +1,16 @@
 import "../../styles/brochure-print.css";
 
-import { ARTSection } from "./art";
-import { ClientesSection } from "./clientes";
-import { DiferenciadoresSection } from "./diferenciadores";
-import { FooterSection } from "./footer";
-import { HeroSection } from "./hero";
-import { MapaSection } from "./mapa";
-import { MisionVisionSection } from "./mision-vision";
-import { Navbar } from "./navbar";
-import { QuienesSomosSection } from "./quienes-somos";
-import { ServiciosSection } from "./servicios";
-import { ValoresSection } from "./valores";
+import { ARTSection } from "./components/art";
+import { ClientesSection } from "./components/clientes";
+import { DiferenciadoresSection } from "./components/diferenciadores";
+import { FooterSection } from "./components/footer";
+import { HeroSection } from "./components/hero";
+import { MapaSection } from "./components/mapa";
+import { MisionVisionSection } from "./components/mision-vision";
+import { Navbar } from "./components/navbar";
+import { QuienesSomosSection } from "./components/quienes-somos";
+import { ServiciosSection } from "./components/servicios";
+import { ValoresSection } from "./components/valores";
 
 export function meta() {
   return [{ title: "Brochure | Concilio & Sarralde" }];
