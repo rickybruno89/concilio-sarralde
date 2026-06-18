@@ -1,13 +1,12 @@
 import "../../styles/brochure-print.css";
 
 import { ARTSection } from "./components/art";
-import { ClientesSection } from "./components/clientes";
+import { AlianzasSection } from "./components/alianzas";
 import { DiferenciadoresSection } from "./components/diferenciadores";
 import { FooterSection } from "./components/footer";
 import { HeroSection } from "./components/hero";
 import { MapaSection } from "./components/mapa";
 import { MisionVisionSection } from "./components/mision-vision";
-import { Navbar } from "./components/navbar";
 import { QuienesSomosSection } from "./components/quienes-somos";
 import { ServiciosSection } from "./components/servicios";
 import { ValoresSection } from "./components/valores";
@@ -22,7 +21,7 @@ export default function BrochureRoute() {
       {/* <Navbar /> */}
       <HeroSection />
       <QuienesSomosSection />
-      <ClientesSection />
+      <AlianzasSection />
       <ServiciosSection />
       <ARTSection />
       <MisionVisionSection />

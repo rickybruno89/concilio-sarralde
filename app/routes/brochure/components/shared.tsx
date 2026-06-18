@@ -19,7 +19,7 @@ export function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 export function GoldRule() {
-  return <div className="my-6 h-[3px] w-12 bg-gold" />;
+  return <div className="my-3 h-0.75 w-12 bg-gold" />;
 }
 
 export function PageSection({
@@ -41,11 +41,21 @@ export function PageSection({
   );
 }
 
-export function Stat({ value, label }: { value: React.ReactNode; label: string }) {
+export function Stat({
+  value,
+  label,
+}: {
+  value: React.ReactNode;
+  label: string;
+}) {
   return (
     <div className="border-b border-white/20 pb-4 md:mr-12 md:border-b-0 md:border-r md:border-white/20 md:pr-12 print:mr-8 print:border-b-0 print:border-r print:pr-8">
-      <div className="text-[44px] font-bold leading-none text-white">{value}</div>
-      <div className="mt-1.5 text-[13px] font-semibold uppercase tracking-[2px] text-white/60">{label}</div>
+      <div className="text-[44px] font-bold leading-none text-white">
+        {value}
+      </div>
+      <div className="mt-1.5 text-[13px] font-semibold uppercase tracking-[2px] text-white/60">
+        {label}
+      </div>
     </div>
   );
 }
@@ -53,14 +63,18 @@ export function Stat({ value, label }: { value: React.ReactNode; label: string }
 export function ClientLogo({ alt, src }: { alt: string; src: string }) {
   return (
     <div className="flex items-center justify-center border-r border-b border-[#e0e0e0] bg-white p-6 min-h-[110px]">
-      <img alt={alt} src={src} className="block h-auto max-h-[90px] w-full max-w-[160px] object-contain" />
+      <img
+        alt={alt}
+        src={src}
+        className="block h-auto max-h-[90px] w-full max-w-[160px] object-contain"
+      />
     </div>
   );
 }
 
 export function Tag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-block text-[15px] font-semibold text-dark bg-[#f5f5f5] border border-[#e0e0e0] px-4 py-[7px]">
+    <span className="inline-block text-[13px] font-semibold text-dark bg-[#f5f5f5] text-gray-600 border border-[#e0e0e0] rounded-full px-2 py-1">
       {children}
     </span>
   );
@@ -74,10 +88,18 @@ export function SmallTag({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function ServiceCard({ title, items }: { title: React.ReactNode; items: string[] }) {
+export function ServiceCard({
+  title,
+  items,
+}: {
+  title: React.ReactNode;
+  items: string[];
+}) {
   return (
     <div className="cursor-default border-b border-r border-[#e0e0e0] border-t-2 border-t-transparent px-[22px] py-[26px] transition hover:border-t-gold hover:bg-dark [&:hover_.srv-name]:text-dark [&:hover_li]:text-dark/45">
-      <div className="srv-name mb-3 text-[15px] font-bold text-dark">{title}</div>
+      <div className="srv-name mb-3 text-[15px] font-bold text-dark">
+        {title}
+      </div>
       <ul className='list-none [&_li]:border-b [&_li]:border-black/[0.04] [&_li]:py-[3px] [&_li]:text-[15px] [&_li]:leading-[1.6] [&_li]:text-[#888] [&_li:before]:text-gold [&_li:before]:content-["–_"]'>
         {items.map((item) => (
           <li key={item}>{item}</li>
@@ -87,7 +109,13 @@ export function ServiceCard({ title, items }: { title: React.ReactNode; items: s
   );
 }
 
-export function ValueCard({ title, description }: { title: React.ReactNode; description: string }) {
+export function ValueCard({
+  title,
+  description,
+}: {
+  title: React.ReactNode;
+  description: string;
+}) {
   return (
     <div className="border-b border-r border-[#e0e0e0] p-[34px]">
       <div className="mb-2.5 text-[16px] font-bold text-gold">{title}</div>
@@ -96,27 +124,50 @@ export function ValueCard({ title, description }: { title: React.ReactNode; desc
   );
 }
 
-export function DifCard({ num, title, body, foot }: { num: string; title: React.ReactNode; body: React.ReactNode; foot: string }) {
+export function DifCard({
+  num,
+  title,
+  body,
+  foot,
+}: {
+  num: string;
+  title: React.ReactNode;
+  body: React.ReactNode;
+  foot: string;
+}) {
   return (
     <div className="border border-[#333] p-8">
       <div className="mb-2 text-[28px] font-bold text-gold">{num}</div>
       <div className="mb-3 text-[16px] font-bold text-dark">{title}</div>
       <div className="mb-4 text-[15px] leading-[1.8] text-[#aaa]">{body}</div>
-      <div className="text-[12px] font-bold uppercase tracking-[2px] text-gold">{foot}</div>
+      <div className="text-[12px] font-bold uppercase tracking-[2px] text-gold">
+        {foot}
+      </div>
     </div>
   );
 }
 
-export function RegistroCard({ logoAlt, logoSrc, title, description }: { logoAlt: string; logoSrc: string; title: string; description: string }) {
+export function RegistroCard({
+  entity,
+  title,
+  description,
+}: {
+  entity: "SSN" | "UIF";
+  title: string;
+  description: string;
+}) {
   return (
     <div className="flex items-center gap-4 border border-[#ebebeb] bg-[#f5f5f5] px-5 py-4">
-      <div className="flex w-[88px] shrink-0 items-center [&_img]:h-auto [&_img]:max-h-8 [&_img]:w-full [&_img]:object-contain">
-        <img alt={logoAlt} src={logoSrc} />
-      </div>
-      <div className="h-9 w-px shrink-0 bg-[#e0e0e0]" />
       <div className="[&_strong]:mb-[3px] [&_strong]:block [&_strong]:text-[15px] [&_strong]:font-bold [&_strong]:text-dark [&_span]:text-sm [&_span]:leading-[1.6] [&_span]:text-[#888]">
         <strong>{title}</strong>
         <span>{description}</span>
+        <div className="h-px w-full shrink-0 bg-[#e0e0e0] my-3" />
+        <div className={`w-80 ${entity === "UIF" ? "bg-[#232d4f] p-3" : ""}`}>
+          <img
+            alt={entity === "SSN" ? "SSN" : "UIF"}
+            src={entity === "SSN" ? "./assets/ssn.png" : "./assets/uif.png"}
+          />
+        </div>
       </div>
     </div>
   );
