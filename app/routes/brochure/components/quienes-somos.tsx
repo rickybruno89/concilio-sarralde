@@ -30,9 +30,10 @@ export function QuienesSomosSection() {
           <div className="my-7 border-l-[3px] border-gold bg-black/[0.02] px-7 py-5">
             <div className="font-serif text italic leading-[1.85] text-[#333]">
               "Nos sumergimos en cada desafío como si fuera propio. Entendemos
-              el negocio desde adentro y acompañamos cada decisión con visión
-              integral. No somos un consultor externo más — el éxito de nuestros
-              clientes es nuestro éxito."
+              el negocio desde adentro y acompañamos cada decisión con una
+              visión integral. Trabajamos junto a nuestros clientes como socios
+              estratégicos, comprometidos con sus objetivos. Su crecimiento y
+              éxito son también el reflejo de nuestro compromiso"
             </div>
             <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
               — Ezequiel Sarralde; Socio Fundador.
@@ -85,9 +86,9 @@ export function QuienesSomosSection() {
         <GoldRule />
         <div className="my-7 border-l-[3px] border-gold bg-black/[0.02] px-7 py-5">
           <div className="font-serif text italic leading-[1.85] text-[#333]">
-            "Cada cliente es una historia de éxito distinta, y nosotros nos
-            enorgullecemos de haber sido parte de cada una de ellas a lo largo
-            de todo este tiempo"
+            "Cada proyecto representa una historia diferente, y nos enorgullece
+            haber contribuido al éxito de tantas organizaciones a lo largo de
+            nuestra trayectoria."
           </div>
           <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
             — Cr. Ariel del Rivero; Socio.

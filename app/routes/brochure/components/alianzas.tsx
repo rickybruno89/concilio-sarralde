@@ -62,16 +62,18 @@ export function AlianzasSection() {
       <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-[1fr_2fr] print:grid-cols-1">
         <div>
           <SectionEyebrow>Servicios</SectionEyebrow>
-          <SectionTitle>Soluciones que generan confianza y resultados.</SectionTitle>
+          <SectionTitle>
+            Soluciones que generan confianza y resultados.
+          </SectionTitle>
           <GoldRule />
         </div>
         <div>
           <div className="border-l-[3px] border-gold bg-black/2 px-7 py-5">
             <div className="font-serif text-base italic leading-[1.85] text-[#333]">
-              "Cada cliente tiene un desafío distinto. Nos involucramos para
-              entenderlo, diagnosticarlo y resolverlo — con equipos
-              especializados, metodología de primer nivel y el compromiso de
-              acompañar cada etapa del camino."
+              "Cada desafío es único. Nos involucramos para entenderlo,
+              diagnosticarlo y resolverlo, con equipos especializados,
+              metodología de primer nivel y el compromiso de acompañar cada
+              etapa del camino"
             </div>
             <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
               — Cra Ariadna Sarralde; Socia.
