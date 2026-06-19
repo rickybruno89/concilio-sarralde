@@ -74,7 +74,7 @@ export function AlianzasSection() {
               acompañar cada etapa del camino."
             </div>
             <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
-              — Cra Ariadna Sarralde; Asociada.
+              — Cra Ariadna Sarralde; Socia.
             </div>
           </div>
         </div>

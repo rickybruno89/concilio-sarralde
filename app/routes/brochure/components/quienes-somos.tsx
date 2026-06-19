@@ -90,7 +90,7 @@ export function QuienesSomosSection() {
             de todo este tiempo"
           </div>
           <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
-            — Cr. Ariel del Rivero, socio.
+            — Cr. Ariel del Rivero; Socio.
           </div>
         </div>
       </div>
