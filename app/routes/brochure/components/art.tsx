@@ -1,5 +1,5 @@
 import { SSN_TAGS, UIF_TAGS } from "./data";
-import { Amp, PageSection, SectionEyebrow, SmallTag } from "./shared";
+import { Amp, PageSection, SectionEyebrow, SmallTag, Tag } from "./shared";
 
 export function ARTSection() {
   return (
@@ -8,19 +8,23 @@ export function ARTSection() {
       <div className="grid grid-cols-1 items-start gap-10 border-t-[3px] border-gold pt-12 md:grid-cols-[1fr_2fr] print:grid-cols-[1fr_2fr]">
         <div>
           <div className="mb-4 text-[clamp(22px,2.5vw,36px)] font-bold leading-[1.15] text-dark">
-            Los únicos especialistas en Seguros y ART de la región
+            Somos el estudio líder en servicios para Compañías de Seguros y ART
+            del Norte Argentino.
           </div>
         </div>
         <div>
           <p className="mb-[18px] text-sm leading-[1.85] text-[#666]">
-            La única firma de referencia en el sector asegurador de la región.
-            Inscriptos en el Registro de Auditores Externos de la SSN,
-            ejecutamos procedimientos acordados, presentaciones ante la SSN y
-            acompañamiento técnico integral para compañías de seguros y ART.
+            Nuestra experiencia y especialización en el sector asegurador nos
+            posicionan como un aliado estratégico para Compañías de Seguros y
+            ART. Como Auditores Externos inscriptos ante la SSN, ofrecemos
+            servicios de auditoría, procedimientos acordados, asistencia
+            regulatoria y acompañamiento técnico integral, aportando
+            conocimiento, confianza y soluciones adaptadas a las necesidades de
+            cada organización
           </p>
           <div className="flex flex-wrap gap-2">
             {SSN_TAGS.map((t) => (
-              <SmallTag key={t}>{t}</SmallTag>
+              <Tag key={t}>{t}</Tag>
             ))}
           </div>
         </div>
@@ -37,7 +41,7 @@ export function ARTSection() {
               indicadores, monitoreo y revisión continua."
             </div>
             <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
-              — Cr. Jorge Bustos Foglia; Asociado.
+              — Cr. Jorge Bustos Foglia; Socio.
             </div>
           </div>
           <p className="mb-[18px] text-sm leading-[1.85] text-[#666]">
@@ -48,7 +52,7 @@ export function ARTSection() {
           </p>
           <div className="flex flex-wrap gap-2">
             {UIF_TAGS.map((t) => (
-              <SmallTag key={t}>{t}</SmallTag>
+              <Tag key={t}>{t}</Tag>
             ))}
           </div>
         </div>

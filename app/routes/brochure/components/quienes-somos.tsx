@@ -70,7 +70,7 @@ export function QuienesSomosSection() {
             <RegistroCard
               entity="UIF"
               title="Revisor Externo Independiente (REI) - UIF"
-              description="El Cr. Jorge Bustos Foglia, asociado del estudio, forma parte del selecto grupo de 207 Revisores Externos Independientes registrados y habilitados por la Unidad de Información Financiera (UIF), organismo rector en materia de prevención del lavado de activos y la financiación del terrorismo en la Argentina."
+              description="El Cr. Jorge Bustos Foglia, socio del estudio, forma parte del selecto grupo de 207 Revisores Externos Independientes registrados y habilitados por la Unidad de Información Financiera (UIF), organismo rector en materia de prevención del lavado de activos y la financiación del terrorismo en la Argentina."
             />
           </div>
         </div>
@@ -90,7 +90,7 @@ export function QuienesSomosSection() {
             de todo este tiempo"
           </div>
           <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
-            — Cr. Ariel del Rivero, Asociado.
+            — Cr. Ariel del Rivero, socio.
           </div>
         </div>
       </div>
