@@ -1,5 +1,4 @@
-import { STATS } from "./data";
-import { Amp, Stat } from "./shared";
+import { Amp } from "./shared";
 
 export function HeroSection() {
   return (
@@ -32,16 +31,11 @@ export function HeroSection() {
           <em>Soluciones locales</em>
         </h1>
         <p className="mx-auto mb-14 max-w-[640px] text-[16px] font-light leading-[1.85] text-[#e0e0e0] md:text-[17px]">
-          Profesionales de las ciencias económicas, jurídicas y tecnológicas
-          trabajando como un solo equipo interdisciplinario. Formados en las
-          firmas de mayor prestigio internacional, comprometidos con cada
-          cliente.
+          Cada organización enfrenta desafíos únicos. Estamos para
+          simplificarlos acompañando cada decisión con el rigor de las grandes
+          firmas internacionales y la cercanía de un equipo que se involucra
+          como si el negocio fuera propio.
         </p>
-        <div className="grid grid-cols-4 gap-5 pt-10 justify-items-center">
-          {STATS.map((s) => (
-            <Stat key={s.label} value={s.value} label={s.label} />
-          ))}
-        </div>
       </div>
     </section>
   );

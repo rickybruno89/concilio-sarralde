@@ -8,19 +8,17 @@ export function ARTSection() {
       <div className="grid grid-cols-1 items-start gap-10 border-t-[3px] border-gold pt-12 md:grid-cols-[1fr_2fr] print:grid-cols-[1fr_2fr]">
         <div>
           <div className="mb-4 text-[clamp(22px,2.5vw,36px)] font-bold leading-[1.15] text-dark">
-            Lider en servicios para compañías de seguros y ART del norte
-            argentino
+            Líderes en servicios para Compañías De Seguros y ART del Norte
+            Argentino
           </div>
         </div>
         <div>
           <p className="mb-[18px] text-sm leading-[1.85] text-[#666]">
-            Nuestra experiencia y especialización en el sector asegurador nos
-            posicionan como un aliado estratégico para Compañías de Seguros y
-            ART. Como Auditores Externos inscriptos ante la SSN, ofrecemos
-            servicios de auditoría, procedimientos acordados, asistencia
-            regulatoria y acompañamiento técnico integral, aportando
-            conocimiento, confianza y soluciones adaptadas a las necesidades de
-            cada organización
+            El sector asegurador tiene su propia lógica, sus propios tiempos y
+            sus propias exigencias. La conocemos en profundidad. Como Auditores
+            Externos inscriptos ante la SSN, acompañamos a Compañías de Seguros
+            y ART con el rigor técnico que el sector requiere y la cercanía de
+            un equipo que entiende su negocio.
           </p>
           <div className="flex flex-wrap gap-2">
             {SSN_TAGS.map((t) => (
@@ -34,16 +32,6 @@ export function ARTSection() {
           </div>
         </div>
         <div>
-          <div className="mb-2 border-l-[3px] border-gold bg-black/[0.02] px-7 py-5">
-            <div className="font-serif text italic leading-[1.85] text-[#333]">
-              "Lo que no se mide no se controla, y lo que no se controla no se
-              mejora. Por ello, todo sistema de cumplimiento eficaz requiere
-              indicadores, monitoreo y revisión continua."
-            </div>
-            <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
-              — Cr. Jorge Bustos Foglia; Socio.
-            </div>
-          </div>
           <p className="mb-[18px] text-sm leading-[1.85] text-[#666]">
             Acompañamos a los Sujetos Obligados en todo el proceso de revisión
             externa: desde el diagnóstico inicial de sus controles internos

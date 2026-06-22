@@ -22,31 +22,34 @@ export const STATS = [
 ];
 
 export const INDUSTRIAS = [
-  "Organismos Estatales",
-  "Seguros & ART",
-  "Industrial",
   "Agropecuario",
-  "Comercio & Retail",
-  "Servicios Financieros",
-  "Inmobiliario",
-  "Tecnología",
-  "Juegos de Azar",
-  "Salud",
-  "Construcción",
   "Asociaciones & Fundaciones",
+  "Bebidas & Manufactureras",
+  "Comercio & Retail",
   "Comercio Exterior (Importación & Exportación)",
+  "Construcción",
+  "Industrial",
+  "Inmobiliario",
+  "Juegos de Azar",
+  "Organismos Estatales",
+  "Salud",
+  "Seguros & ART",
+  "Servicios Financieros",
+  "Tecnología & Software",
 ];
 
 export const CLIENTES_PRIVADOS = [
   { name: "The Coca-Cola Company" },
-  { name: "EY Argentina", logo: "./assets/ey.png" },
-  { name: "Deloitte", logo: "./assets/deloitte.png" },
   { name: "OSDE", logo: "./assets/osde.png" },
   { name: "La Serenísima", logo: "./assets/la-serenisima.png" },
   { name: "Coprotab", logo: "./assets/coprotab.png" },
   {
     name: "Colegio de Graduados en Cs. Económicas de Tucumán",
     logo: "./assets/colegio-de-graduados.png",
+  },
+  {
+    name: "UNSTA",
+    logo: "./assets/unsta.jpg",
   },
   { name: "Club Atlético San Martín", logo: "./assets/san-martin.png" },
 ];
@@ -61,119 +64,109 @@ export const CLIENTES_PUBLICOS = [
   { name: "CPM GIRSU", logo: "./assets/cpm-girsu.png" },
 ];
 
+export const ALIANZAS_ESTRATEGICAS = [
+  { name: "EY Argentina", logo: "./assets/ey.png" },
+  { name: "Deloitte", logo: "./assets/deloitte.png" },
+];
+
 export const SERVICIOS = [
   {
-    title: (
-      "Auditoría y Control"
-    ),
+    title: "Auditoría & Control",
+    description:
+      "Revisión independiente de estados contables, procesos y operaciones con rigor de primer nivel internacional.",
     items: [
-      "Control externo de EECC",
-      "Control interno y operativo",
-      "Due Diligence",
-      "Procedimientos acordados",
-      "Revisiones especiales",
-      "Auditoría operativa de procesos",
-      "Certificaciones contables",
-      "Balance Social",
-      "Seguros y ART",
+      "Estados Contables",
+      "Auditoría de procesos",
+      "Auditoría de Seguros & ART",
+      "Certificaciones",
+      "Balance social",
     ],
   },
   {
-    title: "Consultoría Tributaria",
+    title: "Compliance & Cumplimiento",
+    description:
+      "Programa integral de prevención y cumplimiento normativo. Líderes en la región habilitados ante SSN y UIF.",
     items: [
-      "Planeamiento fiscal",
-      "Liquidaciones nac. y prov.",
-      "Precios de transferencia",
-      "Tributación internacional",
-      "Convenios doble imposición",
-      "Recupero de impuestos",
-      "Defensa en inspecciones",
-      "Gestión ejecuciones fiscales",
+      "LA/FT/PT",
+      "Programa de integridad",
+      "Oficial de cumplimiento",
+      "Manual de prevención",
+      'Empresas "B"',
     ],
   },
   {
-    title: "Área Legal",
-    items: [
-      "Constitución de sociedades",
-      "Fusiones y adquisiciones",
-      "Asesoramiento societario",
-      "Compliance legal",
-      "Disolución de sociedades",
-      "Actas Directorio y Asamblea",
-      "Presentaciones ante IGJ",
-      "Conflictos societarios",
-    ],
-  },
-  {
-    title: (
-      "Outsourcing y RRHH"
-    ),
+    title: "Outsourcing & RRHH",
+    description:
+      "Externalizamos funciones contables y de recursos humanos para que tu equipo se enfoque en el negocio.",
     items: [
       "Outsourcing contable",
       "Liquidación de sueldos",
-      "Gestión de RRHH",
       "Selección de personal",
       "Consultoría laboral",
-      "Capacitación empresarial",
-      "Evaluación del desempeño",
       "Planes de carrera",
     ],
   },
   {
-    title: "Información de Gestión",
-    items: [
-      "Analytics y tableros",
-      "Costos y rentabilidades",
-      "Reingeniería de procesos",
-      "Rediseño de reportes",
-      "Control interno",
-      "Homogeneización de datos",
-      "Presupuestos y proyecciones",
-    ],
-  },
-  {
-    title: (
-      <>
-        M<Amp />A y Emprendedores
-      </>
-    ),
+    title: "M&A; & Emprendedores",
+    description:
+      "Acompañamos desde la idea hasta la venta: planes de negocio, valuaciones y búsqueda de inversores o compradores.",
     items: [
       "Planes de negocio",
-      "Análisis de inversión",
-      "Carpeta financiera",
-      "Due diligence compra/venta",
       "Valuación de empresas",
-      "Búsqueda de compradores",
+      "Due diligence compra/venta",
       "Certificado PyME",
-      "Start Up a PyME",
+      "Start up a PyME",
     ],
   },
   {
-    title: "Compliance",
+    title: "Consultoría Tributaria",
+    description:
+      "Optimización fiscal nacional e internacional para reducir carga impositiva y anticipar riesgos tributarios.",
     items: [
-      "LA/FT/PT",
-      "Programa de integridad",
-      "Canales de denuncia",
-      'Empresas "B"',
-      "Control de sistemas internos",
-      "Manual de prevención",
-      "Oficial de cumplimiento",
+      "Planeamiento fiscal",
+      "Tributación internacional",
+      "Precios de transferencia",
+      "Recupero de impuestos",
+      "Defensa en inspecciones",
+    ],
+  },
+  {
+    title: "Área Legal",
+    description:
+      "Asesoramiento jurídico societario completo, desde la constitución hasta fusiones, adquisiciones y conflictos.",
+    items: [
+      "Constitución de sociedades",
+      "Fusiones & adquisiciones",
+      "Compliance legal",
+      "Presentaciones IGJ",
+      "Conflictos societarios",
+    ],
+  },
+  {
+    title: "Información de Gestión",
+    description:
+      "Transformamos datos en decisiones: tableros, costos, presupuestos y reportes para líderes que necesitan claridad.",
+    items: [
+      "Analytics & tableros",
+      "Costos & rentabilidades",
+      "Presupuestos",
+      "Reingeniería de procesos",
+      "Control interno",
     ],
   },
   {
     title: "Diagnóstico Empresarial",
+    description:
+      "Visitamos, relevamos y analizamos tu organización para identificar problemas, riesgos y oportunidades de mejora.",
     items: [
-      "Visita y relevamiento in situ",
+      "Relevamiento in situ",
       "Diagnóstico de procesos",
-      "Identificación de problemas",
-      "Recomendaciones de mejora",
-      "Seguimiento de implementación",
       "Detección de riesgos",
       "Plan de acción",
       "Informe ejecutivo",
     ],
   },
-] as const;
+];
 
 export const VALORES = [
   {

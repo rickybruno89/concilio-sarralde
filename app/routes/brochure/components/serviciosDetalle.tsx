@@ -1,16 +1,23 @@
 import { SERVICIOS } from "./data";
-import { PageSection, ServiceCard } from "./shared";
+import {
+  GoldRule,
+  PageSection,
+  SectionEyebrow,
+  SectionTitle,
+  ServiceCard,
+} from "./shared";
 
 export function ServiciosDetalleSection() {
   return (
-    <PageSection id="servicios-detalle" className="pb-0!">
-      <div className="grid grid-cols-1 md:grid-cols-4 print:grid-cols-2">
+    <PageSection id="servicios-detalle">
+      <SectionEyebrow>Servicios</SectionEyebrow>
+      <SectionTitle>
+        Soluciones que generan confianza y resultados.
+      </SectionTitle>
+      <GoldRule />
+      <div className="grid grid-cols-1 md:grid-cols-4 print:grid-cols-2 gap-3 mt-10">
         {SERVICIOS.map((s, i) => (
-          <ServiceCard
-            key={i}
-            title={s.title}
-            items={s.items as unknown as string[]}
-          />
+          <ServiceCard key={i} {...s} />
         ))}
       </div>
     </PageSection>

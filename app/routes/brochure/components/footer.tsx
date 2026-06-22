@@ -75,7 +75,8 @@ export function FooterSection() {
               Ariel Del Rivero
             </span>
             <span className="max-w-[150px] text-center text-[12px] text-[#ccc]">
-              Auditoría y Contabilidad, Fusiones y Adquisiciones (M&A)
+              Auditoría y Contabilidad, Fusiones y Adquisiciones (M&A). Buenos
+              Aires
             </span>
           </div>
           {/* Ariadna Sarralde */}

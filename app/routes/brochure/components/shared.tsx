@@ -34,7 +34,7 @@ export function PageSection({
   return (
     <section
       id={id}
-      className={`px-5 py-16 md:px-[52px] md:py-[100px] print:min-h-[297mm] print:w-[210mm] print:break-after-page print:px-[16mm] print:py-[18mm] ${className}`}
+      className={`px-5 py-16 md:px-[52px] md:py-[100px] print:min-h-[297mm] print:w-[210mm] print:break-after-page print:px-[16mm] print:py-[18mm] ${className} border-b-4 border-gold`}
     >
       {children}
     </section>
@@ -49,11 +49,11 @@ export function Stat({
   label: string;
 }) {
   return (
-    <div className=" ">
-      <div className="text-[44px] font-bold leading-none text-white">
+    <div className="first:border-0 border-l-3 border-l-gold w-full">
+      <div className="text-[44px] font-bold leading-none text-[#333333]">
         {value}
       </div>
-      <div className="mt-1.5 text-[13px] font-semibold uppercase tracking-[2px] text-white/60">
+      <div className="mt-1.5 text-[13px] font-semibold uppercase tracking-[2px] text-[#888888]">
         {label}
       </div>
     </div>
@@ -90,21 +90,32 @@ export function SmallTag({ children }: { children: React.ReactNode }) {
 
 export function ServiceCard({
   title,
+  description,
   items,
 }: {
   title: React.ReactNode;
+  description: string;
   items: string[];
 }) {
   return (
-    <div className="cursor-default p-3 transition">
-      <div className="srv-name mb-3 text-[15px] font-bold text-dark">
-        {title}
+    <div className="px-2 py-4 border border-[#e0e0e0] rounded-2xl flex">
+      <div className="p-2">
+        <div className="h-2 w-2 bg-dark-gold rounded-full" />
       </div>
-      <ul className='list-none [&_li]:text-[15px] [&_li]:leading-[1.6] [&_li]:text-[#888] [&_li:before]:text-gold [&_li:before]:content-["–_"]'>
-        {items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+      <div className="flex-1">
+        <div className="mb-1 text-[16px] font-bold text-dark">{title}</div>
+        <div className="mb-1 text-[13px] text-dark">{description}</div>
+        <div className="flex gap-1 flex-wrap">
+          {items.map((item, i) => (
+            <span
+              className="inline-block bg-gold/10 rounded-full px-1 py-px text-[11px] font-semibold text-dark-gold"
+              key={i}
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
@@ -171,6 +182,25 @@ export function RegistroCard({
             src={entity === "SSN" ? "./assets/ssn.png" : "./assets/uif.png"}
           />
         </div>
+      </div>
+    </div>
+  );
+}
+
+export function Quote({
+  children,
+  author,
+}: {
+  children: React.ReactNode;
+  author: string;
+}) {
+  return (
+    <div className="border-l-[3px] border-gold bg-black/2 px-7 py-5">
+      <div className="font-serif text-base italic leading-[1.85] text-[#333]">
+        {children}
+      </div>
+      <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
+        — {author}
       </div>
     </div>
   );

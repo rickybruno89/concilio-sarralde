@@ -1,4 +1,8 @@
-import { CLIENTES_PRIVADOS, CLIENTES_PUBLICOS } from "./data";
+import {
+  ALIANZAS_ESTRATEGICAS,
+  CLIENTES_PRIVADOS,
+  CLIENTES_PUBLICOS,
+} from "./data";
 import {
   ClientLogo,
   GoldRule,
@@ -59,27 +63,25 @@ export function AlianzasSection() {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-[1fr_2fr] print:grid-cols-1">
-        <div>
-          <SectionEyebrow>Servicios</SectionEyebrow>
-          <SectionTitle>
-            Soluciones que generan confianza y resultados.
-          </SectionTitle>
-          <GoldRule />
+
+      {/* Alianzas estrategicas */}
+      <div className="break-inside-avoid">
+        <div className="mt-10 text-[12px] font-bold uppercase tracking-[3px] text-gold">
+          Alianzas estratégicas
         </div>
-        <div>
-          <div className="border-l-[3px] border-gold bg-black/2 px-7 py-5">
-            <div className="font-serif text-base italic leading-[1.85] text-[#333]">
-              "Cada desafío es único. Nos involucramos para entenderlo,
-              diagnosticarlo y resolverlo, con equipos especializados,
-              metodología de primer nivel y el compromiso de acompañar cada
-              etapa del camino"
-            </div>
-            <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
-              — Cra Ariadna Sarralde; Socia.
-            </div>
-          </div>
+        <div className="mt-6 flex gap-10">
+          <img alt={"EY"} src={"./assets/ey.png"} className="block h-14" />
+          <img
+            alt={"DELOITTE"}
+            src={"./assets/deloitte.png"}
+            className="block h-14 mt-4"
+          />
         </div>
+        <p className="text-base font-light leading-[1.85] text-[#666] italic mt-4">
+          Trabajamos en conjunto con EY y Deloitte en proyectos de alta
+          complejidad a nivel local e internacional, compartiendo metodología,
+          estándares y equipos.
+        </p>
       </div>
     </PageSection>
   );

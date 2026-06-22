@@ -9,6 +9,7 @@ import { MapaSection } from "./components/mapa";
 import { QuienesSomosSection } from "./components/quienes-somos";
 import { ServiciosDetalleSection } from "./components/serviciosDetalle";
 import { ValoresSection } from "./components/valores";
+import { HabilitacionesYClientesSection } from "./components/habilitaciones-y-clientes";
 
 export function meta() {
   return [{ title: "Brochure | Concilio & Sarralde" }];
@@ -19,6 +20,7 @@ export default function BrochureRoute() {
     <main className="bg-white font-[Source_Sans_3,Arial,sans-serif] text-[#1a1a1a] print:bg-white">
       <HeroSection />
       <QuienesSomosSection />
+      <HabilitacionesYClientesSection />
       <AlianzasSection />
       <ServiciosDetalleSection />
       <ARTSection />
