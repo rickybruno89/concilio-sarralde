@@ -14,17 +14,20 @@ export function FooterSection() {
       {/* Content */}
       <div className="relative z-[1] flex min-h-[500px] flex-col px-5 py-9 pt-[56px] md:px-[52px] print:min-h-[297mm] print:px-[16mm] print:pt-[18mm] print:pb-[5mm]">
         {/* ── Brand (centered) ── */}
-        <div className="mb-10 flex flex-col items-center text-center">
+        <div className="mb-5 flex flex-col items-center text-center">
           <img
             alt="Concilio Sarralde"
             src="./assets/logo-white.png"
             className="mb-3 block h-10"
           />
-          <div className="text-[20px] font-bold uppercase tracking-[3px] text-white">
+          <div className="text-[18px] font-bold uppercase tracking-[3px] text-white">
             Concilio <Amp /> Sarralde
           </div>
-          <div className="mt-1 text-[14px] uppercase font-bold tracking-[2px] text-gray-300">
+          <div className="mt-1 text-[13px] uppercase font-bold tracking-[2px] text-gray-300">
             Firma Boutique Internacional
+          </div>
+          <div className="mt-6 text-[13px] font-bold uppercase tracking-[3px] text-gold">
+            Nuestro equipo
           </div>
         </div>
 

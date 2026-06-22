@@ -70,6 +70,7 @@ export function MapaSection() {
           ))}
         </g>
         <g fill="#D4A835" filter="url(#softGlow)">
+          {/* Existing labeled markers */}
           <circle cx={300} cy={140} r={6} />
           <circle cx={320} cy={195} r={8} />
           <circle cx={320} cy={195} r={18} opacity={0.15} />
@@ -84,6 +85,13 @@ export function MapaSection() {
           <circle cx={665} cy={155} r={5} />
           <circle cx={550} cy={200} r={6} />
           <circle cx={670} cy={185} r={5} />
+
+          {/* ── Additional countries (5, inside grey continent) ── */}
+          <circle cx={355} cy={275} r={3} opacity={0.8} /> {/* Panamá */}
+          <circle cx={365} cy={292} r={3} opacity={0.8} /> {/* Colombia */}
+          <circle cx={415} cy={288} r={3} opacity={0.8} /> {/* Venezuela */}
+          <circle cx={352} cy={340} r={3} opacity={0.8} /> {/* Perú */}
+          <circle cx={355} cy={385} r={3} opacity={0.8} /> {/* Chile */}
         </g>
         <g
           fill="#D4A835"
