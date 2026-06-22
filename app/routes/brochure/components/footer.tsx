@@ -115,19 +115,61 @@ export function FooterSection() {
 
         {/* ── Bottom bar ── */}
         <div className="mt-auto flex flex-col gap-1 border-t border-white/10 pt-5 ">
+          {/* ── Demos el primer paso ── */}
+          <div className="mb-1 text-[14px] font-bold uppercase tracking-[1px] text-white">
+            Demos el primer paso
+          </div>
+          <div className="mb-1 grid grid-cols-2 gap-4">
+            <div className="mb-4 text-[13px] text-[#ccc]">
+              Para consultas y propuestas, comuníquese con nosotros.
+            </div>
+            <div>
+              <span className="mb-1 flex items-center gap-2 text-[13px] text-white">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <rect x="2" y="4" width="20" height="13" rx="2" />
+                  <polyline points="2,4 12,13 22,4" />
+                </svg>
+                a.sarralde@concilioysarralde.com.ar
+              </span>
+              <span className="flex items-center gap-2 text-[13px] text-white">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="2" />
+                  <line x1="8" y1="11" x2="8" y2="16" />
+                  <line x1="8" y1="8" x2="8" y2="8.5" />
+                  <path d="M12 16v-5c0 0 0-2 2-2s2 2 2 2v5" />
+                </svg>
+                linkedin.com/company/concilio-sarralde
+              </span>
+            </div>
+          </div>
+
           {/* ── Oficinas ── */}
-          <div className="mb-8">
-            <div className="mb-5 text-[15px] font-bold uppercase tracking-[3px] text-gold">
+          <div className="mb-5">
+            <div className="mb-3 text-[13px] font-bold uppercase tracking-[3px] text-gold">
               Nuestras oficinas
             </div>
 
             <div className="grid grid-cols-2">
               {/* Buenos Aires */}
-              <div className="mb-5">
-                <div className="mb-1 text-[16px] font-bold uppercase tracking-[1px] text-white">
+              <div>
+                <div className="mb-1 text-[12px] font-bold uppercase tracking-[1px] text-white">
                   Buenos Aires
                 </div>
-                <div className="text-[16px] leading-[1.7] text-[#ccc]">
+                <div className="text-[12px] leading-[1.7] text-[#ccc]">
                   Av. Belgrano 1217, Piso 10, Of. 106
                   <br />
                   Ciudad de Buenos Aires, Argentina
@@ -138,10 +180,10 @@ export function FooterSection() {
 
               {/* Tucumán */}
               <div>
-                <div className="mb-1 text-[16px] font-bold uppercase tracking-[1px] text-white">
+                <div className="mb-1 text-[12px] font-bold uppercase tracking-[1px] text-white">
                   Tucumán
                 </div>
-                <div className="text-[16px] leading-[1.7] text-[#ccc]">
+                <div className="text-[12px] leading-[1.7] text-[#ccc]">
                   Salta 78, Piso 4, Of. D
                   <br />
                   San Miguel de Tucumán, Argentina
@@ -154,52 +196,12 @@ export function FooterSection() {
             </div>
           </div>
 
-          {/* ── Demos el primer paso ── */}
-          <div className="mb-8">
-            <div className="mb-1 text-[16px] font-bold uppercase tracking-[1px] text-white">
-              Demos el primer paso
-            </div>
-            <div className="mb-4 text-[16px] text-[#ccc]">
-              Para consultas y propuestas, comuníquese con nosotros.
-            </div>
-            <span className="mb-3 flex items-center gap-2 text-[16px] text-white">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              >
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <polyline points="2,4 12,13 22,4" />
-              </svg>
-              a.sarralde@concilioysarralde.com.ar
-            </span>
-            <span className="flex items-center gap-2 text-[16px] text-white">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              >
-                <rect x="2" y="2" width="20" height="20" rx="2" />
-                <line x1="8" y1="11" x2="8" y2="16" />
-                <line x1="8" y1="8" x2="8" y2="8.5" />
-                <path d="M12 16v-5c0 0 0-2 2-2s2 2 2 2v5" />
-              </svg>
-              linkedin.com/company/concilio-sarralde
-            </span>
-          </div>
-          <div className="text-[12px] text-white text-center">
-            © 2026 Estudio Concilio <Amp /> Sarralde S.A.S. · Todos los derechos
+          <div className="text-[10px] text-white text-center">
+            © 2026 Estudio Concilio <Amp /> Sarralde S.A.S. San Miguel de
+            Tucumán · Buenos Aires · República Argentina · Todos los derechos
             reservados
           </div>
-          <div className="text-[12px] font-semibold text-[#ccc] text-center">
-            San Miguel de Tucumán · Buenos Aires · República Argentina
-          </div>
+          <div className="text-[10px] font-semibold text-[#ccc] text-center"></div>
         </div>
       </div>
     </footer>
