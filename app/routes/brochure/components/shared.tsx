@@ -195,12 +195,40 @@ export function Quote({
   author: string;
 }) {
   return (
-    <div className="border-l-[3px] border-gold bg-black/2 px-7 py-5">
-      <div className="font-serif text-base italic leading-[1.85] text-[#333]">
+    <div className="border-l-[3px] border-gold bg-black/2 pl-7 h-fit">
+      <div className="font-serif text-[12px] italic leading-[1.85] text-[#EAEAEA]">
         {children}
       </div>
-      <div className="mt-3 text-sm font-semibold tracking-[1px] text-gold">
+      <div className="mt-3 text-[14px] font-semibold tracking-[1px] text-gold">
         — {author}
+      </div>
+    </div>
+  );
+}
+
+export function Avatar({
+  src,
+  name,
+  role,
+  className,
+}: {
+  src: string;
+  name: string;
+  role: string;
+  className: string;
+}) {
+  return (
+    <div className="w-40">
+      <div className="flex flex-col items-center">
+        <div className="h-20 w-20 overflow-hidden rounded-full">
+          <img alt={name + " " + role} src={src} className={className} />
+        </div>
+        <span className="max-w-[150px] mt-1 text-center text-[10px] text-[#ccc]">
+          {name}
+        </span>
+        <span className="max-w-[150px]  text-center text-[10px] text-[#ccc]">
+          {role}
+        </span>
       </div>
     </div>
   );

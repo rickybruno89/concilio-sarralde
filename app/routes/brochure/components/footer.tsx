@@ -1,4 +1,4 @@
-import { Amp, PageSection } from "./shared";
+import { Amp, Avatar, PageSection, Quote } from "./shared";
 
 export function FooterSection() {
   return (
@@ -29,87 +29,67 @@ export function FooterSection() {
         </div>
 
         {/* Fotos */}
-        <div className="grid grid-cols-3 gap-2">
-          {/* Ariadna Sarralde */}
-          <div className="flex flex-col items-center">
-            <div className="h-30 w-30 overflow-hidden rounded-full">
-              <img
-                alt=""
-                src="./assets/socio-ezequiel-sarralde.png"
-                className="h-47 w-full object-cover object-[center_10%]"
-              />
-            </div>
-            <span className="max-w-[150px] mt-1 text-center text-[12px] text-[#ccc]">
-              Ezequiel Sarralde
-            </span>
-            <span className="max-w-[150px]  text-center text-[12px] text-[#ccc]">
-              Auditoría y Contabilidad
-            </span>
+        <div>
+          <div className="flex justify-center mb-4">
+            <Avatar
+              src="./assets/socio-ezequiel-sarralde.png"
+              name="Ezequiel Sarralde"
+              role="Auditoría y Contabilidad"
+              className="h-30 w-full object-cover object-[center_10%]"
+            />
+            <Avatar
+              src="./assets/socio-octavio-concilio.png"
+              name="Octavio Concilio"
+              role="Impuestos y Laboral"
+              className="h-30 w-full object-cover object-center"
+            />
           </div>
-          {/* Ariadna Sarralde */}
-          <div className="flex flex-col items-center">
-            <div className="h-30 w-30 overflow-hidden rounded-full">
-              <img
-                alt=""
-                src="./assets/socio-octavio-concilio.png"
-                className="h-47 w-full object-cover object-center"
-              />
-            </div>
-            <span className="max-w-[150px] mt-1 text-center text-[12px] text-[#ccc]">
-              Octavio Concilio
-            </span>
-            <span className="max-w-[150px] text-center text-[12px] text-[#ccc]">
-              Impuestos y Laboral
-            </span>
-          </div>
-          {/* Ariadna Sarralde */}
-          <div className="flex flex-col items-center">
-            <div className="h-30 w-30 overflow-hidden rounded-full">
-              <img
-                alt=""
+          <div className="flex gap-6 mb-4 items-center">
+            <div className="w-40">
+              <Avatar
                 src="./assets/socio-ariel-del-rivero.png"
-                className="h-47 w-full object-cover object-center"
+                name="Ariel Del Rivero"
+                role="Auditoría y Contabilidad, Fusiones y Adquisiciones (M&A). Buenos Aires"
+                className="h-30 w-full object-cover object-center"
               />
             </div>
-            <span className="max-w-[150px] mt-1 text-center text-[12px] text-[#ccc]">
-              Ariel Del Rivero
-            </span>
-            <span className="max-w-[150px] text-center text-[12px] text-[#ccc]">
-              Auditoría y Contabilidad, Fusiones y Adquisiciones (M&A). Buenos
-              Aires
-            </span>
+            <Quote author="Ariel del Rivero">
+              "Cuando una empresa cambia de manos o busca crecer, cada detalle
+              importa. Un buen asesor no solo encuentra lo que está mal —
+              encuentra lo que podría salir mal. Esa anticipación es lo que
+              protege a nuestros clientes."
+            </Quote>
           </div>
-          {/* Ariadna Sarralde */}
-          <div className="flex flex-col items-center">
-            <div className="h-30 w-30 overflow-hidden rounded-full">
-              <img
-                alt=""
+          <div className="flex gap-6 mb-4 items-center">
+            <div className="w-40">
+              <Avatar
                 src="./assets/socio-jorge-bustos-foglia.png"
-                className="h-47 w-full object-cover object-center"
+                name="Jorge Bustos Foglia"
+                role="Control y Cumplimiento"
+                className="h-30 w-full object-cover object-center"
               />
             </div>
-            <span className="max-w-[150px] mt-1 text-center text-[12px] text-[#ccc]">
-              Jorge Bustos Foglia
-            </span>
-            <span className="max-w-[150px]  text-center text-[12px] text-[#ccc]">
-              Control y Cumplimiento
-            </span>
+            <Quote author="Jorge Bustos Foglia">
+              "Lo que no se mide no se controla, y lo que no se controla no se
+              mejora. Todo sistema de cumplimiento eficaz requiere indicadores,
+              monitoreo y revisión continua."
+            </Quote>
           </div>
-          {/* Ariadna Sarralde */}
-          <div className="flex flex-col items-center">
-            <div className="h-30 w-30 overflow-hidden rounded-full">
-              <img
-                alt=""
+          <div className="flex gap-6 mb-4 items-center">
+            <div className="w-40">
+              <Avatar
                 src="./assets/socio-ariadna-sarralde.png"
+                name="Ariadna Sarralde"
+                role="Auditoría y Contabilidad"
                 className="h-full w-full object-cover object-[center_-250%] scale-200"
               />
             </div>
-            <span className="max-w-[150px] mt-1 text-center text-[12px] text-[#ccc]">
-              Ariadna Sarralde
-            </span>
-            <span className="max-w-[150px]  text-center text-[12px] text-[#ccc]">
-              Auditoría y Contabilidad
-            </span>
+            <Quote author="Ariadna Sarralde">
+              "El mejor asesor no es el que aparece cuando hay un problema. Es
+              el que ya estaba ahí antes — conociendo el negocio, anticipando
+              riesgos y construyendo junto al cliente una base sólida para
+              crecer."
+            </Quote>
           </div>
         </div>
 
