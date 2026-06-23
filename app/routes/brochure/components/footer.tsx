@@ -157,7 +157,9 @@ export function FooterSection() {
                   <br />
                   Ciudad de Buenos Aires, Argentina
                   <br />
-                  Tel. +54 11 5309 2157
+                  <span className="text-gold">
+                    Escribinos por WhatsApp: +54 11 6291 9539
+                  </span>
                 </div>
               </div>
 
