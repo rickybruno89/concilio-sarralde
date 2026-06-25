@@ -153,9 +153,9 @@ export function FooterSection() {
                   Buenos Aires
                 </div>
                 <div className="text-[12px] leading-[1.7] text-[#ccc]">
-                  Av. Belgrano 1217, Piso 10, Of. 106
+                  Soler 3259 - Palermo
                   <br />
-                  Ciudad de Buenos Aires, Argentina
+                  Ciudad Autónoma de Buenos Aires, Argentina
                   <br />
                   <span className="text-gold">
                     Escribinos por WhatsApp: +54 11 6291 9539
