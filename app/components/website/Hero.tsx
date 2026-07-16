@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeUp, viewportOnce } from "./animations";
+import { fadeUp } from "./animations";
 
 export function Hero() {
   return (
@@ -9,14 +9,14 @@ export function Hero() {
     >
       {/* Background image */}
       <img
-        src="/assets/hero.webp"
+        src="/assets/hero-3.jpg"
         alt=""
         aria-hidden="true"
         loading="eager"
         fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-surface-dark" />
+      <div className="absolute inset-0 bg-surface-dark/85" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
@@ -47,8 +47,8 @@ export function Hero() {
           custom={2}
           className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg"
         >
-          Soluciones integrales en auditoría, consultoría, compliance y servicios
-          profesionales con alcance en más de 30 países.
+          Soluciones integrales en auditoría, consultoría, compliance y
+          servicios profesionales con alcance en más de 30 países.
         </motion.p>
 
         <motion.div
@@ -60,7 +60,9 @@ export function Hero() {
         >
           <button
             onClick={() =>
-              document.querySelector("#servicios")?.scrollIntoView({ behavior: "smooth" })
+              document
+                .querySelector("#servicios")
+                ?.scrollIntoView({ behavior: "smooth" })
             }
             className="rounded-none bg-gold px-8 py-3.5 text-xs font-bold uppercase tracking-label text-surface-dark transition-all hover:bg-dark-gold"
           >
@@ -68,7 +70,9 @@ export function Hero() {
           </button>
           <button
             onClick={() =>
-              document.querySelector("#contacto")?.scrollIntoView({ behavior: "smooth" })
+              document
+                .querySelector("#contacto")
+                ?.scrollIntoView({ behavior: "smooth" })
             }
             className="border border-white/30 px-8 py-3.5 text-xs font-bold uppercase tracking-label text-white transition-all hover:border-gold hover:text-gold"
           >
