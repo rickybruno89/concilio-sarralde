@@ -8,6 +8,8 @@ import { Valores } from "~/components/website/Valores";
 import { Presencia } from "~/components/website/Presencia";
 import { Clientes } from "~/components/website/Clientes";
 import { Compliance } from "~/components/website/Compliance";
+import { CasosDeExito } from "~/components/website/CasosDeExito";
+import { Industrias } from "~/components/website/Industrias";
 import { Equipo } from "~/components/website/Equipo";
 import { Footer } from "~/components/website/Footer";
 import { CookieBanner } from "~/components/website/CookieBanner";
@@ -60,6 +62,8 @@ export default function Home() {
         <Servicios />
         <Valores />
         <Presencia />
+        <CasosDeExito />
+        <Industrias />
         <Clientes />
         <Compliance />
         <Equipo />
