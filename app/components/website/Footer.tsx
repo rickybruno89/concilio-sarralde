@@ -151,13 +151,13 @@ export function Footer() {
           height="24"
           className="mx-auto mb-3 h-6 w-auto opacity-40"
         />
-        <p className="text-xs text-white/30">
+        <p className="text-xs text-white/50">
           © 2026 Estudio Concilio & Sarralde S.A.S. · San Miguel de Tucumán ·
           Buenos Aires · República Argentina · Todos los derechos reservados
         </p>
         <button
           onClick={() => setShowPolicy(true)}
-          className="mt-3 text-xs text-white/30 underline transition-colors hover:text-gold"
+          className="mt-3 text-xs text-white/50 underline transition-colors hover:text-gold"
         >
           Política de privacidad
         </button>
