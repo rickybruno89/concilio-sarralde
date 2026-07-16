@@ -29,10 +29,10 @@ function LogoGrid({
                 src={c.logo.replace("./assets/", "/assets/")}
                 alt={`Logo de ${c.name}`}
                 loading="lazy"
-                className="max-h-14 max-w-full object-contain opacity-70 transition-opacity group-hover:opacity-100 grayscale group-hover:grayscale-0"
+                className="max-h-14 max-w-full object-contain transition-all duration-300 group-hover:grayscale group-hover:opacity-50"
               />
             ) : (
-              <span className="text-center text-xs font-medium uppercase tracking-wider text-on-light-muted group-hover:text-on-light">
+              <span className="text-center text-xs font-medium uppercase tracking-wider text-on-light group-hover:text-on-light-muted">
                 {c.name}
               </span>
             )}

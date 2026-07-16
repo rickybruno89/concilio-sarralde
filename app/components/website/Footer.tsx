@@ -1,7 +1,11 @@
-import { motion } from "framer-motion";
+import { useState, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { fadeUp, staggerContainer, viewportOnce } from "./animations";
+import { PrivacyPolicyModal } from "./CookieBanner";
 
 export function Footer() {
+  const [showPolicy, setShowPolicy] = useState(false);
+  const closePolicy = useCallback(() => setShowPolicy(false), []);
   return (
     <footer
       id="contacto"
@@ -151,7 +155,17 @@ export function Footer() {
           © 2026 Estudio Concilio & Sarralde S.A.S. · San Miguel de Tucumán ·
           Buenos Aires · República Argentina · Todos los derechos reservados
         </p>
+        <button
+          onClick={() => setShowPolicy(true)}
+          className="mt-3 text-xs text-white/30 underline transition-colors hover:text-gold"
+        >
+          Política de privacidad
+        </button>
       </div>
+
+      <AnimatePresence>
+        {showPolicy && <PrivacyPolicyModal onClose={closePolicy} />}
+      </AnimatePresence>
     </footer>
   );
 }

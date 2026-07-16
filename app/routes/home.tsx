@@ -12,7 +12,7 @@ import { CasosDeExito } from "~/components/website/CasosDeExito";
 import { Industrias } from "~/components/website/Industrias";
 import { Equipo } from "~/components/website/Equipo";
 import { Footer } from "~/components/website/Footer";
-import { CookieBanner } from "~/components/website/CookieBanner";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -69,7 +69,6 @@ export default function Home() {
         <Equipo />
       </main>
       <Footer />
-      <CookieBanner />
     </div>
   );
 }
