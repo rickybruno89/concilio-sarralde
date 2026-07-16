@@ -27,7 +27,8 @@ function LogoGrid({
             {c.logo ? (
               <img
                 src={c.logo.replace("./assets/", "/assets/")}
-                alt={c.name}
+                alt={`Logo de ${c.name}`}
+                loading="lazy"
                 className="max-h-14 max-w-full object-contain opacity-70 transition-opacity group-hover:opacity-100 grayscale group-hover:grayscale-0"
               />
             ) : (

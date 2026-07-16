@@ -9,8 +9,11 @@ export function Hero() {
     >
       {/* Background image */}
       <img
-        src="/assets/hero.jpeg"
+        src="/assets/hero.webp"
         alt=""
+        aria-hidden="true"
+        loading="eager"
+        fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-surface-dark" />
@@ -79,6 +82,7 @@ export function Hero() {
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        aria-hidden="true"
       >
         <div className="h-10 w-6 rounded-full border-2 border-white/30 flex items-start justify-center pt-2">
           <div className="h-2 w-1 rounded-full bg-gold" />

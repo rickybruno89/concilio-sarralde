@@ -31,6 +31,7 @@ export function Navbar() {
   return (
     <>
       <motion.nav
+        aria-label="Navegación principal"
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
             ? "bg-surface-dark/95 backdrop-blur-md shadow-lg shadow-black/20"
@@ -39,8 +40,8 @@ export function Navbar() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
           {/* Logo */}
-          <button onClick={() => scrollTo("#hero")} className="flex items-center gap-3">
-            <img src="/assets/logo-white.png" alt="C&S" className="h-8" />
+          <button onClick={() => scrollTo("#hero")} aria-label="Ir al inicio — Concilio & Sarralde" className="flex items-center gap-3">
+            <img src="/assets/logo-white.webp" alt="Concilio & Sarralde logo" width="58" height="32" className="h-8 w-auto" />
             <span className="hidden text-sm font-bold uppercase tracking-eyebrow text-white sm:inline">
               Concilio <span className="text-gold">&</span> Sarralde
             </span>
@@ -63,7 +64,8 @@ export function Navbar() {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="flex flex-col gap-1.5 lg:hidden"
-            aria-label="Menu"
+            aria-label={mobileOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
+            aria-expanded={mobileOpen}
           >
             <span className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${mobileOpen ? "translate-y-2 rotate-45" : ""}`} />
             <span className={`block h-0.5 w-6 bg-white transition-opacity duration-300 ${mobileOpen ? "opacity-0" : ""}`} />

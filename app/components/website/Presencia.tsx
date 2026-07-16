@@ -31,7 +31,7 @@ export function Presencia() {
           viewport={viewportOnce}
           className="mx-auto max-w-4xl"
         >
-          <svg className="w-full" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-full" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de presencia internacional de Concilio & Sarralde en América, Europa y el Caribe">
             <defs>
               <filter id="webGlow">
                 <feGaussianBlur result="blur" stdDeviation="3" />

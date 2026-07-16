@@ -7,8 +7,10 @@ export function Valores() {
     <section id="valores" className="relative min-h-screen overflow-hidden">
       {/* Single hero background */}
       <img
-        src="/assets/valores-bg.jpg"
+        src="/assets/valores-bg.webp"
         alt=""
+        aria-hidden="true"
+        loading="lazy"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-black/75" />

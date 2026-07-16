@@ -104,6 +104,7 @@ export function Footer() {
               stroke="currentColor"
               strokeWidth="1.5"
               className="mt-1"
+              aria-hidden="true"
             >
               <rect x="2" y="4" width="20" height="13" rx="2" />
               <polyline points="2,4 12,13 22,4" />
@@ -114,6 +115,7 @@ export function Footer() {
             href="https://linkedin.com/company/concilio-sarralde"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Concilio & Sarralde en LinkedIn"
             className="flex items-center gap-2 text-sm text-on-dark-secondary transition-colors hover:text-gold"
           >
             <svg
@@ -123,6 +125,7 @@ export function Footer() {
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
+              aria-hidden="true"
             >
               <rect x="2" y="2" width="20" height="20" rx="2" />
               <line x1="8" y1="11" x2="8" y2="16" />
@@ -137,9 +140,12 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10 py-6 text-center">
         <img
-          src="/assets/logo-white.png"
-          alt="C&S"
-          className="mx-auto mb-3 h-6 opacity-40"
+          src="/assets/logo-white.webp"
+          alt="Concilio & Sarralde"
+          loading="lazy"
+          width="43"
+          height="24"
+          className="mx-auto mb-3 h-6 w-auto opacity-40"
         />
         <p className="text-xs text-white/30">
           © 2026 Estudio Concilio & Sarralde S.A.S. · San Miguel de Tucumán ·

@@ -16,7 +16,10 @@ function TagGroup({
       <img
         src={logo}
         alt={alt}
-        className="mb-6 h-12 object-contain brightness-0 invert opacity-80"
+        width="200"
+        height="48"
+        loading="lazy"
+        className="mb-6 h-12 w-auto object-contain brightness-0 invert opacity-80"
       />
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
@@ -34,7 +37,7 @@ function TagGroup({
 
 export function Compliance() {
   return (
-    <section className="bg-surface py-24 sm:py-32">
+    <section id="compliance" className="bg-surface py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <motion.div
           variants={staggerContainer}

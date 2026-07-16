@@ -76,7 +76,8 @@ export function Equipo() {
               <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-2 border-gray-200 bg-gray-100 transition-all duration-500 group-hover:border-gold sm:h-36 sm:w-36">
                 <img
                   src={m.img}
-                  alt={m.name}
+                  alt={`Foto de ${m.name}, ${m.role}`}
+                  loading="lazy"
                   className={`h-full w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0 ${m.imgExtra || ""}`}
                 />
               </div>

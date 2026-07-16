@@ -4,7 +4,7 @@ import { DIFERENCIADORES } from "~/routes/brochure/components/data";
 
 export function Diferenciadores() {
   return (
-    <section className="bg-surface-dark py-24 sm:py-32">
+    <section id="diferenciadores" className="bg-surface-dark py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <motion.div
           variants={staggerContainer}

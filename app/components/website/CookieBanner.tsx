@@ -32,10 +32,10 @@ export function CookieBanner() {
           transition={{ duration: 0.5 }}
           className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-surface/95 backdrop-blur-md"
         >
-          <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-6 py-5 sm:flex-row sm:justify-between lg:px-10">
+          <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-6 py-5 sm:flex-row sm:justify-between lg:px-10" role="dialog" aria-label="Aviso de cookies">
             <p className="text-sm text-white/60">
               Utilizamos cookies para mejorar su experiencia de navegación. Al continuar, acepta nuestra{" "}
-              <button className="text-gold underline">política de cookies</button>.
+              <a href="/politica-cookies" className="text-gold underline">política de cookies</a>.
             </p>
             <div className="flex gap-3">
               <button

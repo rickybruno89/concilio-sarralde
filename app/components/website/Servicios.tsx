@@ -54,7 +54,7 @@ export function Servicios() {
                 className="min-w-0 flex-[0_0_100%] sm:flex-[0_0_48%] lg:flex-[0_0_31.5%]"
               >
                 <div className="group flex h-full flex-col border border-gray-200 bg-white p-8 transition-all duration-500 hover:border-gold/40 hover:shadow-lg">
-                  <div className="mb-4 text-xs font-bold uppercase tracking-eyebrow text-gold/60">
+                  <div className="mb-4 text-xs font-bold uppercase tracking-eyebrow text-gold/80">
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <h3 className="mb-3 text-lg font-bold text-on-light">{s.title}</h3>
@@ -79,15 +79,20 @@ export function Servicios() {
         </div>
 
         {/* Dots */}
-        <div className="mt-8 flex justify-center gap-2">
+        <div className="mt-8 flex justify-center gap-1" role="tablist" aria-label="Páginas del carrusel de servicios">
           {Array.from({ length: snapCount }).map((_, i) => (
             <button
               key={i}
+              role="tab"
+              aria-selected={i === selected}
+              aria-label={`Ir a la página ${i + 1} de ${snapCount}`}
               onClick={() => emblaApi?.scrollTo(i)}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className="flex h-6 items-center justify-center px-1"
+            >
+              <span className={`block h-2 rounded-full transition-all duration-300 ${
                 i === selected ? "w-8 bg-gold" : "w-2 bg-gray-300"
-              }`}
-            />
+              }`} />
+            </button>
           ))}
         </div>
 
@@ -95,15 +100,17 @@ export function Servicios() {
         <div className="mt-6 flex justify-center gap-4">
           <button
             onClick={() => emblaApi?.scrollPrev()}
+            aria-label="Servicio anterior"
             className="flex h-12 w-12 items-center justify-center border border-gray-300 text-on-light transition-all hover:border-gold hover:text-gold"
           >
-            <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="14,4 6,10 14,16" /></svg>
+            <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><polyline points="14,4 6,10 14,16" /></svg>
           </button>
           <button
             onClick={() => emblaApi?.scrollNext()}
+            aria-label="Servicio siguiente"
             className="flex h-12 w-12 items-center justify-center border border-gray-300 text-on-light transition-all hover:border-gold hover:text-gold"
           >
-            <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6,4 14,10 6,16" /></svg>
+            <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><polyline points="6,4 14,10 6,16" /></svg>
           </button>
         </div>
       </div>
