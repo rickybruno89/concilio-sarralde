@@ -107,7 +107,7 @@ export const SERVICIOS = [
     ],
   },
   {
-    title: "M&A; & Emprendedores",
+    title: "M&A & Emprendedores",
     description:
       "Acompañamos desde la idea hasta la venta: planes de negocio, valuaciones y búsqueda de inversores o compradores.",
     items: [

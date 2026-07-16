@@ -16,19 +16,17 @@ function CountUp({ target, suffix }: { target: number; suffix: string }) {
 
   useEffect(() => {
     if (!inView) return;
-    let start = 0;
     const duration = 2000;
-    const step = Math.ceil(target / (duration / 16));
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(start);
+    const startTime = performance.now();
+    const timer = requestAnimationFrame(function tick(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      setCount(Math.round(progress * target));
+      if (progress < 1) {
+        requestAnimationFrame(tick);
       }
-    }, 16);
-    return () => clearInterval(timer);
+    });
+    return () => cancelAnimationFrame(timer);
   }, [inView, target]);
 
   return (
