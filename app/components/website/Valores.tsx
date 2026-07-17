@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer, viewportOnce } from "./animations";
 import { VALORES } from "~/routes/brochure/components/data";
+import { asset } from "~/lib/asset";
 
 export function Valores() {
   return (
     <section id="valores" className="relative min-h-screen overflow-hidden">
       {/* Single hero background */}
       <img
-        src="/assets/valores-bg.webp"
+        src={asset("/assets/valores-bg.webp")}
         alt=""
         aria-hidden="true"
         loading="lazy"

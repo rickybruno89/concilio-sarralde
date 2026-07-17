@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeUp, staggerContainer, viewportOnce } from "./animations";
 import { PrivacyPolicyModal } from "./CookieBanner";
+import { asset } from "~/lib/asset";
 
 export function Footer() {
   const [showPolicy, setShowPolicy] = useState(false);
@@ -144,7 +145,7 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10 py-6 text-center">
         <img
-          src="/assets/logo-white.webp"
+          src={asset("/assets/logo-white.webp")}
           alt="Concilio & Sarralde"
           loading="lazy"
           width="43"

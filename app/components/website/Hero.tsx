@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "./animations";
+import { asset } from "~/lib/asset";
 
 export function Hero() {
   return (
@@ -9,7 +10,7 @@ export function Hero() {
     >
       {/* Background image */}
       <img
-        src="/assets/hero-3.jpg"
+        src={asset("/assets/hero-3.jpg")}
         alt=""
         aria-hidden="true"
         loading="eager"

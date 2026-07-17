@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer, viewportOnce } from "./animations";
+import { asset } from "~/lib/asset";
 
 const FOUNDERS = [
   {
     name: "Ezequiel Sarralde",
     role: "Auditoría y Contabilidad",
-    img: "/assets/socio-ezequiel-sarralde.png",
+    img: asset("/assets/socio-ezequiel-sarralde.png"),
   },
   {
     name: "Octavio Concilio",
     role: "Impuestos y Laboral",
-    img: "/assets/socio-octavio-concilio.png",
+    img: asset("/assets/socio-octavio-concilio.png"),
   },
 ];
 
@@ -27,14 +28,14 @@ const SOCIOS: {
   {
     name: "Ariel Del Rivero",
     role: "Auditoría, M&A · Buenos Aires",
-    img: "/assets/socio-ariel-del-rivero.png",
+    img: asset("/assets/socio-ariel-del-rivero.png"),
     quote:
       "Cuando una empresa cambia de manos o busca crecer, cada detalle importa. Un buen asesor encuentra lo que podría salir mal.",
   },
   {
     name: "Jorge Bustos Foglia",
     role: "Control y Cumplimiento",
-    img: "/assets/socio-jorge-bustos-foglia.png",
+    img: asset("/assets/socio-jorge-bustos-foglia.png"),
     imgExtra: "scale-125",
     quote:
       "Lo que no se mide no se controla, y lo que no se controla no se mejora.",
@@ -42,7 +43,7 @@ const SOCIOS: {
   {
     name: "Ariadna Sarralde",
     role: "Auditoría y Contabilidad",
-    img: "/assets/socio-ariadna-sarralde.png",
+    img: asset("/assets/socio-ariadna-sarralde.png"),
     quote:
       "El mejor asesor no es el que aparece cuando hay un problema. Es el que ya estaba ahí antes.",
   },

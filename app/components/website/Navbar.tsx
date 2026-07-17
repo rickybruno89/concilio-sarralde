@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { asset } from "~/lib/asset";
 
 const NAV_LINKS = [
   { label: "Inicio", href: "#hero" },
@@ -41,7 +42,7 @@ export function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
           {/* Logo */}
           <button onClick={() => scrollTo("#hero")} aria-label="Ir al inicio — Concilio & Sarralde" className="flex items-center gap-3">
-            <img src="/assets/logo-white.webp" alt="Concilio & Sarralde logo" width="58" height="32" className="h-8 w-auto" />
+            <img src={asset("/assets/logo-white.webp")} alt="Concilio & Sarralde logo" width="58" height="32" className="h-8 w-auto" />
             <span className="hidden text-sm font-bold uppercase tracking-eyebrow text-white sm:inline">
               Concilio <span className="text-gold">&</span> Sarralde
             </span>

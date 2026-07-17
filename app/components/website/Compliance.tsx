@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer, viewportOnce } from "./animations";
 import { SSN_TAGS, UIF_TAGS } from "~/routes/brochure/components/data";
+import { asset } from "~/lib/asset";
 
 function TagGroup({
   logo,
@@ -72,7 +73,7 @@ export function Compliance() {
         >
           <motion.div variants={fadeUp} custom={0}>
             <TagGroup
-              logo="/assets/ssn.png"
+              logo={asset("/assets/ssn.png")}
               alt="Superintendencia de Seguros de la Nación"
               title="Registro de Auditores Externos — SSN"
               description="Ezequiel Sarralde, uno de los 336 auditores registrados en el país, socio del estudio, integra el Registro de Auditores Externos de la Superintendencia de Seguros de la Nación (SSN). Este organismo controla el mercado asegurador argentino y exige que las auditorías de las compañías de seguros sean realizadas exclusivamente por contadores inscriptos en dicho registro."
@@ -81,7 +82,7 @@ export function Compliance() {
           </motion.div>
           <motion.div variants={fadeUp} custom={1}>
             <TagGroup
-              logo="/assets/uif.png"
+              logo={asset("/assets/uif.png")}
               alt="Unidad de Información Financiera"
               title="Revisor Externo Independiente (REI) — UIF"
               description="Jorge Bustos Foglia, uno de los 207 revisores de la UIF en el país, socio del estudio, integra el Registro de Revisores Externos Independientes de la Unidad de Información Financiera (UIF). Este organismo es responsable de la prevención del lavado de activos y la financiación del terrorismo en el país, y exige que la revisión externa de los sujetos obligados sea realizada exclusivamente por profesionales inscriptos en dicho registro."

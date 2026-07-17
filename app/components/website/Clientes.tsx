@@ -5,6 +5,7 @@ import {
   CLIENTES_PUBLICOS,
   ALIANZAS_ESTRATEGICAS,
 } from "~/routes/brochure/components/data";
+import { asset } from "~/lib/asset";
 
 function LogoGrid({
   title,
@@ -26,7 +27,7 @@ function LogoGrid({
           >
             {c.logo ? (
               <img
-                src={c.logo.replace("./assets/", "/assets/")}
+                src={asset(c.logo.replace("./assets/", "/assets/"))}
                 alt={`Logo de ${c.name}`}
                 loading="lazy"
                 className="max-h-14 max-w-full object-contain transition-all duration-300 group-hover:grayscale group-hover:opacity-50"
