@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { motion } from "framer-motion";
-import { fadeUp, staggerContainer, viewportOnce } from "./animations";
+import { AnimateInView } from "./animations";
 import { SERVICIOS } from "~/routes/brochure/components/data";
 
 export function Servicios() {
@@ -29,21 +28,18 @@ export function Servicios() {
   return (
     <section id="servicios" className="bg-surface-light py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
+          stagger
           className="mb-16 text-center"
         >
-          <motion.div variants={fadeUp} custom={0} className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
+          <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Soluciones Profesionales
-          </motion.div>
-          <motion.h2 variants={fadeUp} custom={1} className="mb-6 text-3xl font-bold text-on-light sm:text-4xl">
+          </div>
+          <h2 className="mb-6 text-3xl font-bold text-on-light sm:text-4xl">
             Nuestros Servicios
-          </motion.h2>
-          <motion.div variants={fadeUp} custom={2} className="mx-auto h-1 w-12 bg-gold" />
-        </motion.div>
+          </h2>
+          <div className="mx-auto h-1 w-12 bg-gold" />
+        </AnimateInView>
 
         {/* Carousel */}
         <div className="overflow-hidden" ref={emblaRef}>

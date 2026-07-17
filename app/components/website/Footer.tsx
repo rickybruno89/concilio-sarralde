@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { fadeUp, staggerContainer, viewportOnce } from "./animations";
+import { AnimatePresence } from "framer-motion";
+import { AnimateInView } from "./animations";
 import { PrivacyPolicyModal } from "./CookieBanner";
 import { asset } from "~/lib/asset";
 
@@ -13,54 +13,28 @@ export function Footer() {
       className="relative overflow-hidden bg-surface-dark pt-24 sm:pt-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
+          stagger
           className="mb-16 text-center"
         >
-          <motion.div
-            variants={fadeUp}
-            custom={0}
-            className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold"
-          >
+          <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Demos el primer paso
-          </motion.div>
-          <motion.h2
-            variants={fadeUp}
-            custom={1}
-            className="mb-6 text-3xl font-bold text-on-dark sm:text-4xl"
-          >
+          </div>
+          <h2 className="mb-6 text-3xl font-bold text-on-dark sm:text-4xl">
             Contacto
-          </motion.h2>
-          <motion.div
-            variants={fadeUp}
-            custom={2}
-            className="mx-auto mb-6 h-1 w-12 bg-gold"
-          />
-          <motion.p
-            variants={fadeUp}
-            custom={3}
-            className="mx-auto max-w-lg text-base text-on-dark-secondary"
-          >
+          </h2>
+          <div className="mx-auto mb-6 h-1 w-12 bg-gold" />
+          <p className="mx-auto max-w-lg text-base text-on-dark-secondary">
             Para consultas y propuestas, comuníquese con nosotros.
-          </motion.p>
-        </motion.div>
+          </p>
+        </AnimateInView>
 
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
+          stagger
           className="mb-16 grid gap-8 md:grid-cols-2"
         >
           {/* Buenos Aires */}
-          <motion.div
-            variants={fadeUp}
-            custom={0}
-            className="border border-white/10 bg-white/5 p-8"
-          >
+          <div className="border border-white/10 bg-white/5 p-8">
             <div className="mb-3 text-sm font-bold uppercase tracking-label text-on-dark">
               Buenos Aires
             </div>
@@ -70,14 +44,10 @@ export function Footer() {
               Ciudad Autónoma de Buenos Aires, Argentina
             </p>
             <a href="https://wa.me/541162919539" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-dark-gold">WhatsApp: +54 11 6291 9539</a>
-          </motion.div>
+          </div>
 
           {/* Tucumán */}
-          <motion.div
-            variants={fadeUp}
-            custom={1}
-            className="border border-white/10 bg-white/5 p-8"
-          >
+          <div className="border border-white/10 bg-white/5 p-8">
             <div className="mb-3 text-sm font-bold uppercase tracking-label text-on-dark">
               Tucumán
             </div>
@@ -86,15 +56,11 @@ export function Footer() {
               San Miguel de Tucumán, Argentina
             </p>
             <a href="https://wa.me/543814694769" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-dark-gold">WhatsApp: +54 381 469 4769</a>
-          </motion.div>
-        </motion.div>
+          </div>
+        </AnimateInView>
 
         {/* Contact links */}
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
           className="mb-16 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-8"
         >
           <a
@@ -139,7 +105,7 @@ export function Footer() {
             </svg>
             LinkedIn
           </a>
-        </motion.div>
+        </AnimateInView>
       </div>
 
       {/* Bottom bar */}

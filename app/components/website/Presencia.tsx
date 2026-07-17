@@ -1,34 +1,26 @@
-import { motion } from "framer-motion";
-import { fadeUp, staggerContainer, viewportOnce } from "./animations";
+import { AnimateInView } from "./animations";
 
 export function Presencia() {
   return (
     <section id="presencia" className="overflow-hidden bg-surface-dark py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
+          stagger
           className="mb-12 text-center"
         >
-          <motion.div variants={fadeUp} custom={0} className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
+          <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Presencia Internacional
-          </motion.div>
-          <motion.h2 variants={fadeUp} custom={1} className="mb-6 text-3xl font-bold text-on-dark sm:text-4xl">
+          </div>
+          <h2 className="mb-6 text-3xl font-bold text-on-dark sm:text-4xl">
             Alcance Global
-          </motion.h2>
-          <motion.div variants={fadeUp} custom={2} className="mx-auto mb-6 h-1 w-12 bg-gold" />
-          <motion.p variants={fadeUp} custom={3} className="mx-auto max-w-xl text-base text-on-dark-secondary">
+          </h2>
+          <div className="mx-auto mb-6 h-1 w-12 bg-gold" />
+          <p className="mx-auto max-w-xl text-base text-on-dark-secondary">
             Oficinas en Tucumán y Buenos Aires. Presencia activa en más de 30 países de América, Europa y el Caribe.
-          </motion.p>
-        </motion.div>
+          </p>
+        </AnimateInView>
 
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
           className="mx-auto max-w-4xl"
         >
           <svg className="w-full" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de presencia internacional de Concilio & Sarralde en América, Europa y el Caribe">
@@ -80,7 +72,7 @@ export function Presencia() {
               ))}
             </g>
           </svg>
-        </motion.div>
+        </AnimateInView>
       </div>
     </section>
   );

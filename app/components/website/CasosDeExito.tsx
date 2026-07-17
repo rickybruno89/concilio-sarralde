@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { fadeUp, staggerContainer, viewportOnce } from "./animations";
+import { AnimateInView } from "./animations";
 
 const CASOS = [
   {
@@ -23,34 +22,26 @@ export function CasosDeExito() {
   return (
     <section id="casos" className="bg-surface-dark py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
+          stagger
           className="mb-16 text-center"
         >
-          <motion.div variants={fadeUp} custom={0} className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
+          <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Experiencia comprobada
-          </motion.div>
-          <motion.h2 variants={fadeUp} custom={1} className="mb-6 text-3xl font-bold text-on-dark sm:text-4xl">
+          </div>
+          <h2 className="mb-6 text-3xl font-bold text-on-dark sm:text-4xl">
             Casos de Éxito
-          </motion.h2>
-          <motion.div variants={fadeUp} custom={2} className="mx-auto h-1 w-12 bg-gold" />
-        </motion.div>
+          </h2>
+          <div className="mx-auto h-1 w-12 bg-gold" />
+        </AnimateInView>
 
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
+          stagger
           className="grid gap-8 md:grid-cols-3"
         >
-          {CASOS.map((caso, i) => (
-            <motion.article
+          {CASOS.map((caso) => (
+            <article
               key={caso.title}
-              variants={fadeUp}
-              custom={i}
               className="flex flex-col border border-white/10 bg-white/5 p-8 transition-all duration-500 hover:border-gold/40 hover:bg-white/10"
             >
               <h3 className="mb-4 text-xl font-bold text-on-dark">{caso.title}</h3>
@@ -60,9 +51,9 @@ export function CasosDeExito() {
               <span className="mt-auto inline-block self-start border border-gold/30 bg-gold/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-gold">
                 {caso.tag}
               </span>
-            </motion.article>
+            </article>
           ))}
-        </motion.div>
+        </AnimateInView>
       </div>
     </section>
   );

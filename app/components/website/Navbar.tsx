@@ -35,7 +35,7 @@ export function Navbar() {
         aria-label="Navegación principal"
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-surface-dark/95 backdrop-blur-md shadow-lg shadow-black/20"
+            ? "bg-surface-dark shadow-lg shadow-black/20"
             : "bg-transparent"
         }`}
       >
@@ -82,7 +82,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-surface-dark/98 backdrop-blur-lg lg:hidden"
+            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-surface-dark lg:hidden"
           >
             {NAV_LINKS.map((link) => (
               <button

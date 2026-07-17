@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { fadeUp, staggerContainer, viewportOnce } from "./animations";
+import { AnimateInView } from "./animations";
 import { asset } from "~/lib/asset";
 
 const FOUNDERS = [
@@ -53,40 +52,21 @@ export function Equipo() {
   return (
     <section id="equipo" className="bg-surface-light py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
+          stagger
           className="mb-16 text-center"
         >
-          <motion.div
-            variants={fadeUp}
-            custom={0}
-            className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold"
-          >
+          <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Nuestro Equipo
-          </motion.div>
-          <motion.h2
-            variants={fadeUp}
-            custom={1}
-            className="mb-6 text-3xl font-bold text-on-light sm:text-4xl"
-          >
+          </div>
+          <h2 className="mb-6 text-3xl font-bold text-on-light sm:text-4xl">
             Los profesionales detrás de cada solución
-          </motion.h2>
-          <motion.div
-            variants={fadeUp}
-            custom={2}
-            className="mx-auto h-1 w-12 bg-gold"
-          />
-        </motion.div>
+          </h2>
+          <div className="mx-auto h-1 w-12 bg-gold" />
+        </AnimateInView>
 
         {/* Founders — shared card */}
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
           className="mb-12 border border-gray-200 bg-white p-8 sm:p-10 transition-all duration-500 hover:border-gold/40 hover:shadow-lg"
         >
           <div className="mb-2 text-xs font-bold uppercase tracking-eyebrow text-gold/70">
@@ -119,21 +99,16 @@ export function Equipo() {
               </p>
             </blockquote>
           </div>
-        </motion.div>
+        </AnimateInView>
 
         {/* Other partners */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+        <AnimateInView
+          stagger
           className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {SOCIOS.map((m, i) => (
-            <motion.div
+          {SOCIOS.map((m) => (
+            <div
               key={m.name}
-              variants={fadeUp}
-              custom={i}
               className="group flex flex-col items-center border border-gray-200 bg-white p-8 pt-10 text-center transition-all duration-500 hover:border-gold/40 hover:shadow-lg"
             >
               <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-2 border-gray-200 bg-gray-100 transition-all duration-500 group-hover:border-gold sm:h-36 sm:w-36">
@@ -155,9 +130,9 @@ export function Equipo() {
                   </p>
                 </div>
               )}
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </AnimateInView>
       </div>
     </section>
   );
