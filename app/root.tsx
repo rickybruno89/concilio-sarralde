@@ -10,11 +10,14 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
-export const links: Route.LinksFunction = () => [
-  { rel: "icon", href: "/favicon.ico", sizes: "any" },
-  { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
-  { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-];
+export const links: Route.LinksFunction = () => {
+  const base = import.meta.env.BASE_URL;
+  return [
+    { rel: "icon", href: `${base}favicon.ico`, sizes: "any" },
+    { rel: "icon", href: `${base}favicon.svg`, type: "image/svg+xml" },
+    { rel: "apple-touch-icon", href: `${base}apple-touch-icon.png` },
+  ];
+};
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
