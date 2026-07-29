@@ -16,7 +16,7 @@ function TagGroup({
   tags: string[];
 }) {
   return (
-    <div className="border border-white/10 bg-white/5 p-8">
+    <div className="border border-white/10 bg-white/5 p-8 h-full">
       <img
         src={logo}
         alt={alt}
@@ -47,10 +47,7 @@ export function Compliance() {
   return (
     <section id="compliance" className="bg-surface py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <AnimateInView
-          stagger
-          className="mb-16 text-center"
-        >
+        <AnimateInView stagger className="mb-16 text-center">
           <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Habilitaciones
           </div>
@@ -60,10 +57,7 @@ export function Compliance() {
           <div className="mx-auto h-1 w-12 bg-gold" />
         </AnimateInView>
 
-        <AnimateInView
-          stagger
-          className="grid gap-8 md:grid-cols-2"
-        >
+        <AnimateInView stagger className="grid gap-8 md:grid-cols-2">
           <div>
             <TagGroup
               logo={asset("/assets/ssn.png")}

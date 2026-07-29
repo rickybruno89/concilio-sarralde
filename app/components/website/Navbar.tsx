@@ -10,6 +10,8 @@ const NAV_LINKS = [
   { label: "Presencia", href: "#presencia" },
   { label: "Clientes", href: "#clientes" },
   { label: "Equipo", href: "#equipo" },
+  { label: "Carreras", href: "#carreras" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -39,7 +41,7 @@ export function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 nav:px-10">
           {/* Logo */}
           <button onClick={() => scrollTo("#hero")} aria-label="Ir al inicio — Concilio & Sarralde" className="flex items-center gap-3">
             <img src={asset("/assets/logo-white.webp")} alt="Concilio & Sarralde logo" width="58" height="32" className="h-8 w-auto" />
@@ -49,7 +51,7 @@ export function Navbar() {
           </button>
 
           {/* Desktop links */}
-          <div className="hidden items-center gap-8 lg:flex">
+          <div className="hidden items-center gap-8 nav:flex">
             {NAV_LINKS.map((link) => (
               <button
                 key={link.href}
@@ -64,7 +66,7 @@ export function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="flex flex-col gap-1.5 lg:hidden"
+            className="flex flex-col gap-1.5 nav:hidden"
             aria-label={mobileOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
             aria-expanded={mobileOpen}
           >
@@ -82,7 +84,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-surface-dark lg:hidden"
+            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-surface-dark nav:hidden"
           >
             {NAV_LINKS.map((link) => (
               <button

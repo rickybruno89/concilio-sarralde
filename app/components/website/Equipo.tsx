@@ -24,13 +24,13 @@ const SOCIOS: {
   quote: string;
   imgExtra?: string;
 }[] = [
-  {
-    name: "Ariel Del Rivero",
-    role: "Auditoría, M&A · Buenos Aires",
-    img: asset("/assets/socio-ariel-del-rivero.png"),
-    quote:
-      "Cuando una empresa cambia de manos o busca crecer, cada detalle importa. Un buen asesor encuentra lo que podría salir mal.",
-  },
+  // {
+  //   name: "Ariel Del Rivero",
+  //   role: "Auditoría, M&A · Buenos Aires",
+  //   img: asset("/assets/socio-ariel-del-rivero.png"),
+  //   quote:
+  //     "Cuando una empresa cambia de manos o busca crecer, cada detalle importa. Un buen asesor encuentra lo que podría salir mal.",
+  // },
   {
     name: "Jorge Bustos Foglia",
     role: "Control y Cumplimiento",
@@ -52,10 +52,7 @@ export function Equipo() {
   return (
     <section id="equipo" className="bg-surface-light py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <AnimateInView
-          stagger
-          className="mb-16 text-center"
-        >
+        <AnimateInView stagger className="mb-16 text-center">
           <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Nuestro Equipo
           </div>
@@ -65,74 +62,76 @@ export function Equipo() {
           <div className="mx-auto h-1 w-12 bg-gold" />
         </AnimateInView>
 
-        {/* Founders — shared card */}
-        <AnimateInView
-          className="mb-12 border border-gray-200 bg-white p-8 sm:p-10 transition-all duration-500 hover:border-gold/40 hover:shadow-lg"
-        >
-          <div className="mb-2 text-xs font-bold uppercase tracking-eyebrow text-gold/70">
-            Socios Fundadores
-          </div>
-          <div className="grid gap-8 sm:grid-cols-2 mb-8">
-            {FOUNDERS.map((f) => (
-              <div key={f.name} className="group flex items-center gap-5">
-                <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full border-2 border-gray-200 bg-gray-100 transition-all duration-500 group-hover:border-gold sm:h-24 sm:w-24">
-                  <img
-                    src={f.img}
-                    alt={`Foto de ${f.name}, ${f.role}`}
-                    loading="lazy"
-                    className="h-full w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-on-light">{f.name}</h3>
-                  <div className="text-xs font-medium uppercase tracking-label text-gold/70">
-                    {f.role}
+        <div className="grid gap-8">
+          {/* Founders — shared card */}
+          <AnimateInView className="mb-4 border border-gray-200 bg-white p-8 sm:p-10 transition-all duration-500 hover:border-gold/40 hover:shadow-lg lg:mx-auto lg:mb-8 lg:w-5/6">
+            <div className="mb-2 text-xs font-bold uppercase tracking-eyebrow text-gold/70">
+              Socios Fundadores
+            </div>
+            <div className="grid gap-8 sm:grid-cols-2 mb-8">
+              {FOUNDERS.map((f) => (
+                <div key={f.name} className="group flex items-center gap-5">
+                  <div className="h-32 w-32 shrink-0 overflow-hidden rounded-full border-2 border-gray-200 bg-gray-100 transition-all duration-500 group-hover:border-gold sm:h-36 sm:w-36">
+                    <img
+                      src={f.img}
+                      alt={`Foto de ${f.name}, ${f.role}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-on-light">
+                      {f.name}
+                    </h3>
+                    <div className="text-xs font-medium uppercase tracking-label text-gold/70">
+                      {f.role}
+                    </div>
                   </div>
                 </div>
+              ))}
+            </div>
+            <div className="border-t border-gray-100 pt-6">
+              <blockquote className="border-l-2 border-gold pl-5">
+                <p className="text-sm italic leading-relaxed text-on-light-muted">
+                  &ldquo;{FOUNDERS_QUOTE}&rdquo;
+                </p>
+              </blockquote>
+            </div>
+          </AnimateInView>
+
+          {/* Other partners */}
+          <AnimateInView
+            stagger
+            className="grid gap-8 sm:grid-cols-2 lg:mx-auto lg:w-5/6"
+          >
+            {SOCIOS.map((m) => (
+              <div
+                key={m.name}
+                className="group flex flex-col items-center border border-gray-200 bg-white p-8 pt-10 text-center transition-all duration-500 hover:border-gold/40 hover:shadow-lg"
+              >
+                <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-2 border-gray-200 bg-gray-100 transition-all duration-500 group-hover:border-gold sm:h-36 sm:w-36">
+                  <img
+                    src={m.img}
+                    alt={`Foto de ${m.name}, ${m.role}`}
+                    loading="lazy"
+                    className={`h-full w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0 ${m.imgExtra || ""}`}
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-on-light">{m.name}</h3>
+                <div className="mb-4 text-xs font-medium uppercase tracking-label text-gold/70">
+                  {m.role}
+                </div>
+                {m.quote && (
+                  <div className="mt-auto w-full border-t border-gray-100 pt-4">
+                    <p className="text-sm italic leading-relaxed text-on-light-muted">
+                      &ldquo;{m.quote}&rdquo;
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
-          </div>
-          <div className="border-t border-gray-100 pt-6">
-            <blockquote className="border-l-2 border-gold pl-5">
-              <p className="text-sm italic leading-relaxed text-on-light-muted">
-                &ldquo;{FOUNDERS_QUOTE}&rdquo;
-              </p>
-            </blockquote>
-          </div>
-        </AnimateInView>
-
-        {/* Other partners */}
-        <AnimateInView
-          stagger
-          className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          {SOCIOS.map((m) => (
-            <div
-              key={m.name}
-              className="group flex flex-col items-center border border-gray-200 bg-white p-8 pt-10 text-center transition-all duration-500 hover:border-gold/40 hover:shadow-lg"
-            >
-              <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-2 border-gray-200 bg-gray-100 transition-all duration-500 group-hover:border-gold sm:h-36 sm:w-36">
-                <img
-                  src={m.img}
-                  alt={`Foto de ${m.name}, ${m.role}`}
-                  loading="lazy"
-                  className={`h-full w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0 ${m.imgExtra || ""}`}
-                />
-              </div>
-              <h3 className="text-lg font-bold text-on-light">{m.name}</h3>
-              <div className="mb-4 text-xs font-medium uppercase tracking-label text-gold/70">
-                {m.role}
-              </div>
-              {m.quote && (
-                <div className="mt-auto w-full border-t border-gray-100 pt-4">
-                  <p className="text-sm italic leading-relaxed text-on-light-muted">
-                    &ldquo;{m.quote}&rdquo;
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
-        </AnimateInView>
+          </AnimateInView>
+        </div>
       </div>
     </section>
   );

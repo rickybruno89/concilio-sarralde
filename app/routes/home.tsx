@@ -11,6 +11,8 @@ import { Compliance } from "~/components/website/Compliance";
 import { CasosDeExito } from "~/components/website/CasosDeExito";
 import { Industrias } from "~/components/website/Industrias";
 import { Equipo } from "~/components/website/Equipo";
+import { Carreras } from "~/components/website/Carreras";
+import { FAQ } from "~/components/website/FAQ";
 import { Footer } from "~/components/website/Footer";
 
 
@@ -67,6 +69,8 @@ export default function Home() {
         <Clientes />
         <Compliance />
         <Equipo />
+        <Carreras />
+        <FAQ />
       </main>
       <Footer />
     </div>

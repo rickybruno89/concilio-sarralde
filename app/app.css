@@ -31,6 +31,9 @@
   --tracking-eyebrow: 0.25em;
   --tracking-label: 0.15em;
   --tracking-nav: 0.12em;
+
+  /* ── Breakpoints ── */
+  --breakpoint-nav: 1400px;
 }
 
 html {
