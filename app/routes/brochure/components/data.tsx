@@ -28,13 +28,15 @@ export const INDUSTRIAS = [
   "Comercio & Retail",
   "Comercio Exterior (Importación & Exportación)",
   "Construcción",
+  "Franquicias & Cadenas Comerciales",
   "Industrial",
   "Inmobiliario",
   "Juegos de Azar",
-  "Organismos Estatales",
   "Salud",
+  "Sector Público",
   "Seguros & ART",
   "Servicios Financieros",
+  "Servicios Profesionales",
   "Tecnología & Software",
 ];
 
@@ -80,42 +82,9 @@ export const SERVICIOS = [
       "Auditoría de Seguros & ART",
       "Certificaciones",
       "Balance social",
-    ],
-  },
-  {
-    title: "Compliance & Cumplimiento",
-    description:
-      "Programa integral de prevención y cumplimiento normativo. Líderes en la región habilitados ante SSN y UIF.",
-    items: [
-      "LA/FT/PT",
-      "Programa de integridad",
-      "Oficial de cumplimiento",
-      "Manual de prevención",
-      'Empresas "B"',
-    ],
-  },
-  {
-    title: "Outsourcing & RRHH",
-    description:
-      "Externalizamos funciones contables y de recursos humanos para que tu equipo se enfoque en el negocio.",
-    items: [
-      "Outsourcing contable",
-      "Liquidación de sueldos",
-      "Selección de personal",
-      "Consultoría laboral",
-      "Planes de carrera",
-    ],
-  },
-  {
-    title: "M&A & Emprendedores",
-    description:
-      "Acompañamos desde la idea hasta la venta: planes de negocio, valuaciones y búsqueda de inversores o compradores.",
-    items: [
-      "Planes de negocio",
-      "Valuación de empresas",
-      "Due diligence compra/venta",
-      "Certificado PyME",
-      "Start up a PyME",
+      "Control de franquicias y contratos",
+      "Auditoria Forense",
+      "Reportes ESG",
     ],
   },
   {
@@ -131,15 +100,16 @@ export const SERVICIOS = [
     ],
   },
   {
-    title: "Área Legal",
+    title: "Diagnóstico Empresarial",
     description:
-      "Asesoramiento jurídico societario completo, desde la constitución hasta fusiones, adquisiciones y conflictos.",
+      "Visitamos, relevamos y analizamos tu organización para identificar problemas, riesgos y oportunidades de mejora.",
     items: [
-      "Constitución de sociedades",
-      "Fusiones & adquisiciones",
-      "Compliance legal",
-      "Presentaciones IGJ",
-      "Conflictos societarios",
+      "Relevamiento in situ",
+      "Diagnóstico de procesos",
+      "Detección de riesgos",
+      "Plan de acción",
+      "Informe ejecutivo",
+      "Project Management",
     ],
   },
   {
@@ -152,18 +122,63 @@ export const SERVICIOS = [
       "Presupuestos",
       "Reingeniería de procesos",
       "Control interno",
+      "CRM & Estrategia comercial",
+      "Automatización (RPA)",
+      "CFO Externo",
+      "Reporting a inversores y socios",
     ],
   },
   {
-    title: "Diagnóstico Empresarial",
+    title: "Outsourcing & RRHH",
     description:
-      "Visitamos, relevamos y analizamos tu organización para identificar problemas, riesgos y oportunidades de mejora.",
+      "Externalizamos funciones contables, de RRHH y de atención para que tu equipo se enfoque en el negocio.",
     items: [
-      "Relevamiento in situ",
-      "Diagnóstico de procesos",
-      "Detección de riesgos",
-      "Plan de acción",
-      "Informe ejecutivo",
+      "Outsourcing contable",
+      "Liquidación de sueldos",
+      "Selección de personal",
+      "Consultoría laboral",
+      "Planes de carrera",
+      "Contacto Center",
+      "Atención al cliente y ciudadano",
+      "Gestión de cobranzas",
+      "Capacitaciones empresariales",
+    ],
+  },
+  {
+    title: "M&A & Emprendedores",
+    description:
+      "Acompañamos desde la idea hasta la venta: planes de negocio, valuaciones y búsqueda de inversores o compradores.",
+    items: [
+      "Planes de negocio",
+      "Valuación de empresas",
+      "Due diligence compra/venta",
+      "Certificado PyME",
+      "Start up a PyME",
+    ],
+  },
+  {
+    title: "Cumplimiento Normativo (Compliance)",
+    description:
+      "Diseñamos, implementamos y fortalecemos sistemas de cumplimiento normativo, acompañando a las organizaciones frente a los principales organismos de control.",
+    items: [
+      "LA/FT/PT",
+      "Programa de integridad",
+      "Oficial de cumplimiento",
+      "Diseño e implementación de sistemas de cumplimiento",
+      "Cumplimiento regulatorio ante UIF, BCRA, SSN, SRT y ARCA",
+      "Empresas B",
+    ],
+  },
+  {
+    title: "Área Legal",
+    description:
+      "Asesoramiento jurídico societario completo, desde la constitución hasta fusiones, adquisiciones y conflictos.",
+    items: [
+      "Constitución de sociedades",
+      "Fusiones & adquisiciones",
+      "Compliance legal",
+      "Presentaciones IGJ",
+      "Conflictos societarios",
     ],
   },
 ];
@@ -177,7 +192,7 @@ export const VALORES = [
   {
     title: "Confiabilidad",
     description:
-      "Nuestros clientes deben considerarnos como un proveedor confiable, en todos los aspectos de nuestros servicios.",
+      "Nuestros clientes nos consideran un proveedor confiable en todos los aspectos de nuestros servicios.",
   },
   {
     title: "Trabajo en Equipo",
@@ -187,12 +202,12 @@ export const VALORES = [
   {
     title: "Integridad, Ética y Calidad Humana",
     description:
-      "Los cimientos de nuestros trabajos, orientados al prestigio y la seriedad durante y después de cumplidos los objetivos.",
+      "Son los cimientos de nuestro trabajo, orientado al prestigio y la seriedad, antes, durante y después de cumplidos los objetivos.",
   },
   {
     title: "Transparencia y Honestidad",
     description:
-      "Política totalmente transparente para con nuestro cliente, sin lugar a dudas en el alcance y la prestación de nuestros servicios.",
+      "Mantenemos una política totalmente transparente con nuestro cliente, sin dudas respecto del alcance y la prestación de nuestros servicios.",
   },
   {
     title: "Flexibilidad",
@@ -206,7 +221,7 @@ export const DIFERENCIADORES = [
     num: "01",
     title: "Equipo Interdisciplinario",
     body: "Contadores, auditores, abogados y especialistas en sistemas trabajando de forma integrada. Una sola firma, todas las respuestas.",
-    foot: "Área Legal Propia",
+    foot: "Compliance Legal",
   },
   {
     num: "02",
@@ -217,7 +232,7 @@ export const DIFERENCIADORES = [
   {
     num: "03",
     title: "Únicos en la Región",
-    body: "La única firma de la región con equipo dedicado al control y procedimientos acordados para Segurosy ART. Inscriptos en el Registro de Auditores Externos de la SSN y habilitados como Revisores Externos Independientes (REI) ante la UIF — dos de los registros más exigentes del sistema regulatorio argentino.",
+    body: "La única firma de la región con equipo dedicado al control y procedimientos acordados para Seguros y ART. Inscriptos en el Registro de Auditores Externos de la SSN y habilitados como Revisores Externos Independientes (REI) ante la UIF — dos de los registros más exigentes del sistema regulatorio argentino.",
     foot: "SSN · UIF · ART",
   },
   {

@@ -41,10 +41,10 @@ const SOCIOS: {
   },
   {
     name: "Ariadna Sarralde",
-    role: "Auditoría y Contabilidad",
+    role: "Auditoría, Contabilidad y Project Management",
     img: asset("/assets/socio-ariadna-sarralde.png"),
     quote:
-      "El mejor asesor no es el que aparece cuando hay un problema. Es el que ya estaba ahí antes.",
+      "El valor de un asesor no está en la rapidez para resolver un problema, sino en la anticipación que evita que ocurra. Por eso nuestro rol empieza mucho antes.",
   },
 ];
 
@@ -122,10 +122,12 @@ export function Equipo() {
                   {m.role}
                 </div>
                 {m.quote && (
-                  <div className="mt-auto w-full border-t border-gray-100 pt-4">
-                    <p className="text-sm italic leading-relaxed text-on-light-muted">
-                      &ldquo;{m.quote}&rdquo;
-                    </p>
+                  <div className="mt-2 w-full border-t border-gray-100 pt-4">
+                    <blockquote className="border-l-2 border-gold pl-5">
+                      <p className="text-sm italic leading-relaxed text-on-light-muted">
+                        &ldquo;{m.quote}&rdquo;
+                      </p>
+                    </blockquote>
                   </div>
                 )}
               </div>

@@ -48,8 +48,10 @@ export function Hero() {
           custom={2}
           className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg"
         >
-          Soluciones integrales en auditoría, consultoría, compliance y
-          servicios profesionales con alcance en más de 30 países.
+          Cada organización enfrenta desafíos únicos. Estamos para
+          simplificarlos acompañando cada decisión con el rigor de las grandes
+          firmas internacionales y la cercanía de un equipo que se involucra
+          como si el negocio fuera propio.
         </motion.p>
 
         <motion.div

@@ -4,49 +4,47 @@ import { AnimateInView } from "./animations";
 
 const FAQS = [
   {
-    question: "¿En qué zonas del país y del mundo trabajan?",
+    question:
+      "¿Cómo logran trabajar en tantos países manteniendo la misma calidad de servicio?",
     answer:
-      "Tenemos sede en Buenos Aires (Palermo) y en San Miguel de Tucumán, y mantenemos presencia activa en más de 30 países de América, Europa y el Caribe a través de nuestra red de alianzas y clientes con operaciones internacionales.",
+      "Nuestra organización, los equipos interdisciplinarios y una metodología de trabajo estandarizada nos permiten brindar el mismo nivel de servicio sin importar la ubicación del cliente. Contamos con herramientas para trabajar de forma remota, flexibilidad para viajar y una red de contactos en distintos países. Para nosotros, la distancia no es una limitación.",
   },
   {
-    question: "¿Qué significa que trabajan de forma complementaria a EY y Deloitte?",
+    question:
+      "¿Qué significa que colaboran con grandes firmas internacionales?",
     answer:
-      "En proyectos de alta complejidad colaboramos junto a EY y Deloitte compartiendo metodología y estándares de trabajo. No somos una franquicia ni estamos afiliados formalmente a ninguna de las dos firmas: mantenemos nuestra independencia como estudio boutique y sumamos esa colaboración cuando el proyecto lo requiere.",
+      "En determinados proyectos de alta complejidad colaboramos puntualmente con profesionales de reconocidas firmas internacionales de auditoría y consultoría, compartiendo metodologías y estándares de trabajo. Mantenemos nuestra independencia y cada colaboración responde exclusivamente a las necesidades del proyecto.",
   },
   {
-    question: "¿Qué tipo de empresas e industrias atienden?",
+    question:
+      "¿En qué se diferencian de las grandes firmas de auditoría y consultoría?",
     answer:
-      "Trabajamos con empresas de los sectores agropecuario, industrial, comercio y retail, comercio exterior, construcción, inmobiliario, salud, tecnología, servicios financieros, seguros y ART, asociaciones y fundaciones, y organismos estatales, entre otros. Contamos con más de 300 clientes atendidos a lo largo de nuestra trayectoria.",
-  },
-  {
-    question: "¿En qué se diferencian de las Big Four?",
-    answer:
-      "Nuestro equipo incluye profesionales con experiencia previa en firmas Big Four, pero funcionamos como un estudio boutique: equipos interdisciplinarios (contadores, auditores, abogados y especialistas en sistemas) con atención directa de los socios, mayor flexibilidad y un área legal propia integrada al servicio. Además, somos de los pocos estudios de la región con un equipo dedicado específicamente a Seguros y ART.",
-  },
-  {
-    question: "¿Cómo garantizan la confidencialidad de la información?",
-    answer:
-      "La confidencialidad y el secreto profesional son pilares de nuestro trabajo. Actuamos con independencia total y sin conflictos de interés, y nuestros socios están habilitados ante organismos de control como la Superintendencia de Seguros de la Nación (SSN) y la Unidad de Información Financiera (UIF), lo que exige altos estándares de reserva y cumplimiento normativo.",
-  },
-  {
-    question: "¿Cómo aseguran la independencia del equipo auditor?",
-    answer:
-      "La independencia profesional es una condición no negociable de nuestro trabajo: no participamos en la gestión ni en las decisiones operativas de los clientes que auditamos, y evaluamos posibles conflictos de interés antes de aceptar cada encargo. Esto se suma a las exigencias de los registros profesionales en los que estamos inscriptos.",
-  },
-  {
-    question: "¿Con qué normas y estándares trabajan?",
-    answer:
-      "Aplicamos las normas contables profesionales vigentes en Argentina y, cuando el proyecto lo requiere, normas internacionales (NIIF/IFRS y normas internacionales de auditoría), en línea con la metodología y los estándares que compartimos con EY y Deloitte en los trabajos conjuntos.",
+      "Nuestro equipo reúne experiencia adquirida en algunas de las principales firmas internacionales, pero trabajamos con la agilidad y cercanía de un estudio independiente. Ofrecemos atención directa de los socios, equipos interdisciplinarios, mayor flexibilidad y soluciones adaptadas a la realidad de cada cliente. Además, contamos con un equipo especializado en Seguros y ART.",
   },
   {
     question: "¿Cuál es la diferencia entre auditoría externa y consultoría?",
     answer:
-      "La auditoría externa es un servicio de aseguramiento: revisamos y emitimos una opinión independiente sobre los estados contables u otra información de la empresa. La consultoría, en cambio, es un servicio de asesoramiento activo (tributario, legal, de gestión, etc.) donde trabajamos junto al cliente para mejorar procesos o resolver un problema puntual. Cuando ambos servicios podrían generar un conflicto de independencia, los separamos por equipo o los derivamos según corresponda.",
+      "La auditoría externa es un servicio de aseguramiento mediante el cual revisamos información y emitimos una opinión independiente. La consultoría, en cambio, implica analizar, diagnosticar y recomendar soluciones para mejorar procesos, resolver problemas y acompañar la toma de decisiones. Cuando ambos servicios pudieran generar un conflicto de independencia, se prestan mediante equipos separados o se derivan según corresponda.",
   },
   {
-    question: "¿Cómo puedo empezar a trabajar con Concilio & Sarralde?",
+    question: "¿Por qué se consideran una firma boutique?",
     answer:
-      "Podés escribirnos por WhatsApp a cualquiera de nuestras dos sedes o enviarnos un correo desde la sección de Contacto. Nos vamos a poner en contacto para entender tu necesidad y coordinar los siguientes pasos según el servicio que estés buscando.",
+      "Ser una firma boutique significa ofrecer un servicio altamente personalizado. Nuestros socios participan activamente en cada proyecto, conformamos equipos a medida para cada cliente y priorizamos relaciones de largo plazo, combinando cercanía, flexibilidad y altos estándares técnicos.",
+  },
+  {
+    question: "¿Por qué además de auditores somos consultores?",
+    answer:
+      "Nuestro trabajo va más allá del cumplimiento normativo: analizamos, diagnosticamos y recomendamos, acompañando a cada organización en las decisiones que definen su crecimiento. Incluso al prestar servicios tradicionales, abordamos cada proyecto con una mirada consultiva.",
+  },
+  {
+    question: "¿Con qué normas y estándares trabajan?",
+    answer:
+      "Aplicamos las normas profesionales, contables y regulatorias que correspondan según la actividad, las necesidades del cliente y el organismo que lo supervise. Esto puede incluir normas argentinas e internacionales y requerimientos de organismos como el BCRA, la SSN, la UIF, la SRT, la CNV y ARCA, entre otros.",
+  },
+  {
+    question: "¿Cómo incorporan la tecnología en sus servicios?",
+    answer:
+      "Trabajamos con herramientas de inteligencia artificial, automatización y plataformas tecnológicas que nos permiten brindar un servicio más eficiente, seguro y preciso. Nuestra infraestructura facilita el trabajo remoto, la colaboración entre equipos y el intercambio y resguardo seguro de la información de nuestros clientes.",
   },
 ];
 
@@ -74,7 +72,15 @@ function FaqItem({
             isOpen ? "rotate-45" : ""
           }`}
         >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            aria-hidden="true"
+          >
             <line x1="12" y1="4" x2="12" y2="20" />
             <line x1="4" y1="12" x2="20" y2="12" />
           </svg>

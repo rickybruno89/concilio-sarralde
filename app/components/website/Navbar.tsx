@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { label: "Clientes", href: "#clientes" },
   { label: "Equipo", href: "#equipo" },
   { label: "Carreras", href: "#carreras" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Preguntas Frecuentes", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -41,7 +41,7 @@ export function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 nav:px-10">
+        <div className="mx-auto flex max-w-[1550px] items-center justify-between px-6 py-4 nav:px-10">
           {/* Logo */}
           <button onClick={() => scrollTo("#hero")} aria-label="Ir al inicio — Concilio & Sarralde" className="flex items-center gap-3">
             <img src={asset("/assets/logo-white.webp")} alt="Concilio & Sarralde logo" width="58" height="32" className="h-8 w-auto" />

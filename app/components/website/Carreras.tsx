@@ -1,6 +1,6 @@
 import { AnimateInView } from "./animations";
 
-const CV_EMAIL = "a.sarralde@concilioysarralde.com.ar";
+const CV_EMAIL = "estudio@concilioysarralde.com";
 const CV_SUBJECT = "CARRERAS - CV Apellido y Nombre";
 const MAILTO_HREF = `mailto:${CV_EMAIL}?subject=${encodeURIComponent(CV_SUBJECT)}`;
 

@@ -17,11 +17,13 @@ function LogoGrid({
     <div className="mb-12 flex justify-center">
       <div className="max-w-2xl text-center">
         <p className=" text-base leading-relaxed text-on-light-secondary my-2 ">
-          En proyectos de alta complejidad, trabajamos de forma complementaria a
-          EY y Deloitte, compartiendo metodología y estándares.
+          En proyectos que requieren equipos interdisciplinarios, colaboramos
+          puntualmente con profesionales de reconocidas firmas internacionales,
+          compartiendo metodologías y estándares de calidad para brindar la
+          mejor solución a nuestros clientes.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          {items.map((c) => (
+          {/* {items.map((c) => (
             <div
               key={c.name}
               className="group flex h-24 items-center justify-center border border-gray-200 bg-white p-4 transition-all duration-300 hover:border-gold/40 hover:shadow-md"
@@ -39,7 +41,7 @@ function LogoGrid({
                 </span>
               )}
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
@@ -58,7 +60,7 @@ export function Clientes() {
             Clientes & Alianzas Estratégicas
           </h2> */}
           <h2 className="mb-6 text-3xl font-bold text-on-light sm:text-4xl">
-            Alianzas Estratégicas
+            Trabajo Colaborativo
           </h2>
           <div className="mx-auto h-1 w-12 bg-gold" />
         </AnimateInView>

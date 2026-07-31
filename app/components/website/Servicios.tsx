@@ -28,10 +28,7 @@ export function Servicios() {
   return (
     <section id="servicios" className="bg-surface-light py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <AnimateInView
-          stagger
-          className="mb-16 text-center"
-        >
+        <AnimateInView stagger className="mb-16 text-center">
           <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Soluciones Profesionales
           </div>
@@ -53,11 +50,13 @@ export function Servicios() {
                   <div className="mb-4 text-xs font-bold uppercase tracking-eyebrow text-gold/80">
                     {String(i + 1).padStart(2, "0")}
                   </div>
-                  <h3 className="mb-3 text-lg font-bold text-on-light">{s.title}</h3>
+                  <h3 className="mb-3 text-lg font-bold text-on-light">
+                    {s.title}
+                  </h3>
                   <p className="mb-6 text-sm leading-relaxed text-on-light-secondary">
                     {s.description}
                   </p>
-                  <ul className="mt-auto space-y-2">
+                  <ul className="space-y-2">
                     {s.items.map((item) => (
                       <li
                         key={item}
@@ -75,7 +74,11 @@ export function Servicios() {
         </div>
 
         {/* Dots */}
-        <div className="mt-8 flex justify-center gap-1" role="tablist" aria-label="Páginas del carrusel de servicios">
+        <div
+          className="mt-8 flex justify-center gap-1"
+          role="tablist"
+          aria-label="Páginas del carrusel de servicios"
+        >
           {Array.from({ length: snapCount }).map((_, i) => (
             <button
               key={i}
@@ -85,9 +88,11 @@ export function Servicios() {
               onClick={() => emblaApi?.scrollTo(i)}
               className="flex h-6 items-center justify-center px-1"
             >
-              <span className={`block h-2 rounded-full transition-all duration-300 ${
-                i === selected ? "w-8 bg-gold" : "w-2 bg-gray-300"
-              }`} />
+              <span
+                className={`block h-2 rounded-full transition-all duration-300 ${
+                  i === selected ? "w-8 bg-gold" : "w-2 bg-gray-300"
+                }`}
+              />
             </button>
           ))}
         </div>
@@ -99,14 +104,32 @@ export function Servicios() {
             aria-label="Servicio anterior"
             className="flex h-12 w-12 items-center justify-center border border-gray-300 text-on-light transition-all hover:border-gold hover:text-gold"
           >
-            <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><polyline points="14,4 6,10 14,16" /></svg>
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              aria-hidden="true"
+            >
+              <polyline points="14,4 6,10 14,16" />
+            </svg>
           </button>
           <button
             onClick={() => emblaApi?.scrollNext()}
             aria-label="Servicio siguiente"
             className="flex h-12 w-12 items-center justify-center border border-gray-300 text-on-light transition-all hover:border-gold hover:text-gold"
           >
-            <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><polyline points="6,4 14,10 6,16" /></svg>
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              aria-hidden="true"
+            >
+              <polyline points="6,4 14,10 6,16" />
+            </svg>
           </button>
         </div>
       </div>

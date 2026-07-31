@@ -13,10 +13,7 @@ export function Footer() {
       className="relative overflow-hidden bg-surface-dark pt-24 sm:pt-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <AnimateInView
-          stagger
-          className="mb-16 text-center"
-        >
+        <AnimateInView stagger className="mb-16 text-center">
           <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
             Demos el primer paso
           </div>
@@ -29,10 +26,7 @@ export function Footer() {
           </p>
         </AnimateInView>
 
-        <AnimateInView
-          stagger
-          className="mb-16 grid gap-8 md:grid-cols-2"
-        >
+        <AnimateInView stagger className="mb-16 grid gap-8 md:grid-cols-2">
           {/* Buenos Aires */}
           <div className="border border-white/10 bg-white/5 p-8">
             <div className="mb-3 text-sm font-bold uppercase tracking-label text-on-dark">
@@ -43,7 +37,14 @@ export function Footer() {
               <br />
               Ciudad Autónoma de Buenos Aires, Argentina
             </p>
-            <a href="https://wa.me/541162919539" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-dark-gold">WhatsApp: +54 11 6291 9539</a>
+            <a
+              href="https://wa.me/541162919539"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-dark-gold"
+            >
+              WhatsApp: +54 11 6291 9539
+            </a>
           </div>
 
           {/* Tucumán */}
@@ -55,14 +56,27 @@ export function Footer() {
               Salta 78, Piso 4, Of. D<br />
               San Miguel de Tucumán, Argentina
             </p>
-            <a href="https://wa.me/543814694769" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-dark-gold">WhatsApp: +54 381 469 4769</a>
+            <a
+              href="https://wa.me/543814694769"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-dark-gold"
+            >
+              WhatsApp: +54 381 469 4769
+            </a>
+            <img
+              src={asset("/assets/whatsapp-qr.png")}
+              alt="QR WhatsApp"
+              loading="lazy"
+              width="100"
+              height="100"
+              className="mt-3 h-auto w-24"
+            />
           </div>
         </AnimateInView>
 
         {/* Contact links */}
-        <AnimateInView
-          className="mb-16 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-8"
-        >
+        <AnimateInView className="mb-16 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-8">
           <a
             href="mailto:a.sarralde@concilioysarralde.com.ar"
             className="flex items-center gap-2 text-sm text-on-dark-secondary transition-colors hover:text-gold"
