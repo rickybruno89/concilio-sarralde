@@ -20,6 +20,7 @@ function TagGroup({
       <div className="flex gap-4 flex-wrap items-center">
         {logos.map((src, index) => (
           <img
+            key={src}
             src={src}
             alt={alt}
             loading="lazy"
