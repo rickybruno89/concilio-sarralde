@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: "Servicios", href: "#servicios" },
   { label: "Valores", href: "#valores" },
   { label: "Presencia", href: "#presencia" },
-  { label: "Clientes", href: "#clientes" },
+  { label: "Colaboraciones", href: "#colaboraciones" },
   { label: "Equipo", href: "#equipo" },
   { label: "Carreras", href: "#carreras" },
   { label: "Preguntas Frecuentes", href: "#faq" },
@@ -43,9 +43,17 @@ export function Navbar() {
       >
         <div className="mx-auto flex max-w-[1550px] items-center justify-between px-6 py-4 nav:px-10">
           {/* Logo */}
-          <button onClick={() => scrollTo("#hero")} aria-label="Ir al inicio — Concilio & Sarralde" className="flex items-center gap-3">
-            <img src={asset("/assets/logo-white.webp")} alt="Concilio & Sarralde logo" width="58" height="32" className="h-8 w-auto" />
-            <span className="hidden text-sm font-bold uppercase tracking-eyebrow text-white sm:inline">
+          <button
+            onClick={() => scrollTo("#hero")}
+            aria-label="Ir al inicio — Concilio & Sarralde"
+            className="flex flex-col items-center gap-2"
+          >
+            <img
+              src={asset("/assets/logo-white.webp")}
+              alt="Concilio & Sarralde logo"
+              className="h-6 w-auto"
+            />
+            <span className="hidden text-xs font-bold uppercase tracking-eyebrow text-white sm:inline">
               Concilio <span className="text-gold">&</span> Sarralde
             </span>
           </button>
@@ -67,12 +75,22 @@ export function Navbar() {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="flex flex-col gap-1.5 nav:hidden"
-            aria-label={mobileOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
+            aria-label={
+              mobileOpen
+                ? "Cerrar menú de navegación"
+                : "Abrir menú de navegación"
+            }
             aria-expanded={mobileOpen}
           >
-            <span className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${mobileOpen ? "translate-y-2 rotate-45" : ""}`} />
-            <span className={`block h-0.5 w-6 bg-white transition-opacity duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
-            <span className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`} />
+            <span
+              className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${mobileOpen ? "translate-y-2 rotate-45" : ""}`}
+            />
+            <span
+              className={`block h-0.5 w-6 bg-white transition-opacity duration-300 ${mobileOpen ? "opacity-0" : ""}`}
+            />
+            <span
+              className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`}
+            />
           </button>
         </div>
       </motion.nav>
