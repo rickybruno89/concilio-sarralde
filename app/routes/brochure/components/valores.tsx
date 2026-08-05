@@ -1,4 +1,4 @@
-import { VALORES } from "./data";
+import { VALORES } from "../../../lib/data";
 import { GoldRule, PageSection, SectionEyebrow, SectionTitle, ValueCard } from "./shared";
 
 export function ValoresSection() {

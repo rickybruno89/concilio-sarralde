@@ -2,7 +2,7 @@ import {
   ALIANZAS_ESTRATEGICAS,
   CLIENTES_PRIVADOS,
   CLIENTES_PUBLICOS,
-} from "./data";
+} from "../../../lib/data";
 import {
   ClientLogo,
   GoldRule,

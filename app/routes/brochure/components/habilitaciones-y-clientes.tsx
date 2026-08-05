@@ -1,4 +1,4 @@
-import { INDUSTRIAS } from "./data";
+import { INDUSTRIAS } from "../../../lib/data";
 import {
   GoldRule,
   PageSection,

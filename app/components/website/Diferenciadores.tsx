@@ -1,5 +1,5 @@
 import { AnimateInView } from "./animations";
-import { DIFERENCIADORES } from "~/routes/brochure/components/data";
+import { DIFERENCIADORES } from "~/lib/data";
 
 export function Diferenciadores() {
   return (

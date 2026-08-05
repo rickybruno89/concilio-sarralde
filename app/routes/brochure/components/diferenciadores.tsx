@@ -1,4 +1,4 @@
-import { DIFERENCIADORES } from "./data";
+import { DIFERENCIADORES } from "../../../lib/data";
 import { DifCard, GoldRule, SectionEyebrow, SectionTitle } from "./shared";
 
 export function DiferenciadoresSection() {

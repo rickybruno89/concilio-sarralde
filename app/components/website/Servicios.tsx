@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { AnimateInView } from "./animations";
-import { SERVICIOS } from "~/routes/brochure/components/data";
+import { SERVICIOS } from "~/lib/data";
 
 export function Servicios() {
   const [emblaRef, emblaApi] = useEmblaCarousel({

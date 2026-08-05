@@ -1,5 +1,3 @@
-import { Amp } from "./shared";
-
 export const STATS = [
   { value: "14", label: "Años de trayectoria" },
   {
@@ -187,32 +185,32 @@ export const VALORES = [
   {
     title: "Confidencialidad",
     description:
-      "Trabajamos bajo la más estricta reserva y secreto profesional. La información de nuestros clientes es sagrada.",
+      "Protegemos la información confiada por nuestros clientes con absoluta reserva, en cumplimiento de nuestros deberes éticos y profesionales.",
   },
   {
     title: "Confiabilidad",
     description:
-      "Nuestros clientes nos consideran un proveedor confiable en todos los aspectos de nuestros servicios.",
+      "Construimos relaciones basadas en el cumplimiento de nuestros compromisos, la responsabilidad y la calidad de nuestros servicios.",
   },
   {
     title: "Trabajo en Equipo",
     description:
-      "La mejor forma de lograr objetivos con la máxima calidad posible y en los tiempos acordados.",
+      "Fomentamos la colaboración entre nuestros profesionales para brindar soluciones integrales, eficientes y de excelencia.",
   },
   {
     title: "Integridad, Ética y Calidad Humana",
     description:
-      "Son los cimientos de nuestro trabajo, orientado al prestigio y la seriedad, antes, durante y después de cumplidos los objetivos.",
+      "Actuamos con honestidad, respeto y compromiso, guiados por sólidos principios éticos y una profunda vocación de servicio.",
   },
   {
     title: "Transparencia y Honestidad",
     description:
-      "Mantenemos una política totalmente transparente con nuestro cliente, sin dudas respecto del alcance y la prestación de nuestros servicios.",
+      "Mantenemos una comunicación clara y transparente, brindando información precisa sobre el alcance y desarrollo de nuestros servicios.",
   },
   {
     title: "Flexibilidad",
     description:
-      "Ante un mundo de permanente cambio, trabajamos con adaptabilidad. Nos ajustamos a cada cliente, industria y contexto.",
+      "Nos adaptamos a las necesidades de cada cliente y a los desafíos de un entorno en constante evolución, ofreciendo soluciones acordes a cada contexto.",
   },
 ];
 
@@ -265,6 +263,7 @@ export const SSN_TAGS = [
   "FFEP",
   "Cumplimiento SRT",
 ];
+
 export const UIF_TAGS = [
   "Diagnóstico de controles internos",
   "Revisión externa independiente",

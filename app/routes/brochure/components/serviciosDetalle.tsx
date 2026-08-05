@@ -1,4 +1,4 @@
-import { SERVICIOS } from "./data";
+import { SERVICIOS } from "../../../lib/data";
 import {
   GoldRule,
   PageSection,

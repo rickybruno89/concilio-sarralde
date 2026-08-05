@@ -1,4 +1,4 @@
-import { SSN_TAGS, UIF_TAGS } from "./data";
+import { SSN_TAGS, UIF_TAGS } from "../../../lib/data";
 import { Amp, PageSection, SectionEyebrow, SmallTag, Tag } from "./shared";
 
 export function ARTSection() {

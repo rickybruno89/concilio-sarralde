@@ -1,5 +1,5 @@
 import { AnimateInView } from "./animations";
-import { INDUSTRIAS } from "~/routes/brochure/components/data";
+import { INDUSTRIAS } from "~/lib/data";
 
 export function Industrias() {
   return (

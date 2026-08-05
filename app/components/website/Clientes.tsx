@@ -3,8 +3,7 @@ import {
   CLIENTES_PRIVADOS,
   CLIENTES_PUBLICOS,
   ALIANZAS_ESTRATEGICAS,
-} from "~/routes/brochure/components/data";
-import { asset } from "~/lib/asset";
+} from "~/lib/data";
 
 function LogoGrid({
   title,

@@ -1,5 +1,5 @@
 import { AnimateInView } from "./animations";
-import { SSN_TAGS, UIF_TAGS } from "~/routes/brochure/components/data";
+import { SSN_TAGS, UIF_TAGS } from "~/lib/data";
 import { asset } from "~/lib/asset";
 
 function TagGroup({

@@ -1,5 +1,5 @@
 import { AnimateInView } from "./animations";
-import { VALORES } from "~/routes/brochure/components/data";
+import { VALORES } from "~/lib/data";
 import { asset } from "~/lib/asset";
 
 export function Valores() {
