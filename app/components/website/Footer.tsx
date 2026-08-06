@@ -136,6 +136,12 @@ export function Footer() {
           © 2026 Estudio Concilio & Sarralde S.A.S. · San Miguel de Tucumán ·
           Buenos Aires · República Argentina · Todos los derechos reservados
         </p>
+        <p className="mt-2 text-xs text-white/50">
+          Sitio web desarrollado por{" "}
+          <a className="text-gold" href="mailto:rbrunount@gmail.com">
+            Ing. Ricardo Bruno
+          </a>
+        </p>
         <button
           onClick={() => setShowPolicy(true)}
           className="mt-3 text-xs text-white/50 underline transition-colors hover:text-gold"
