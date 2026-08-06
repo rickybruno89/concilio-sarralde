@@ -35,7 +35,7 @@ const SOCIOS: {
     name: "Jorge Bustos Foglia",
     role: "Procesos, Control y Cumplimiento",
     img: asset("/assets/socio-jorge-bustos-foglia.png"),
-    imgExtra: "scale-125",
+    imgExtra: "scale-115",
     quote:
       "Lo que no se mide no se controla, y lo que no se controla no se mejora.",
   },
@@ -43,6 +43,7 @@ const SOCIOS: {
     name: "Ariadna Sarralde",
     role: "Auditoría y Project Management",
     img: asset("/assets/socio-ariadna-sarralde.png"),
+    imgExtra: "scale-150",
     quote:
       "El valor de un asesor no está en la rapidez para resolver un problema, sino en la anticipación que evita que ocurra. Por eso nuestro rol empieza mucho antes.",
   },

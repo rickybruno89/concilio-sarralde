@@ -10,9 +10,13 @@ function LogoGrid() {
           una comprensión integral de cada situación. Por ello, estudiamos cada
           caso de manera individual, considerando sus particularidades y los
           desafíos que presenta, para definir el enfoque más adecuado. Cuando la
-          naturaleza del asunto lo requiere, colaboramos de manera puntual con
-          profesionales de distintas especialidades y reconocida trayectoria,
-          integrando conocimientos y experiencias que aportan valor al proceso.
+          naturaleza del asunto lo requiere,
+          <span className="font-extrabold text-on-light">
+            {" "}
+            colaboramos de manera puntual con profesionales de distintas
+            especialidades y reconocida trayectoria, integrando conocimientos y
+            experiencias que aportan valor al proceso.
+          </span>
         </p>
         <p className="mt-6 text-base leading-relaxed text-on-light-secondary my-2">
           Esta modalidad de trabajo nos permite ofrecer respuestas más
@@ -43,7 +47,7 @@ export function Colaboraciones() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <AnimateInView stagger className="mb-6 text-center">
           <div className="mb-3 text-xs font-bold uppercase tracking-eyebrow text-gold">
-            Confían en nosotros
+            Alianzas Estratégicas
           </div>
           {/* <h2 className="mb-6 text-3xl font-bold text-on-light sm:text-4xl">
             Clientes & Alianzas Estratégicas

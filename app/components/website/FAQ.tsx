@@ -19,7 +19,7 @@ const FAQS = [
     question:
       "¿En qué se diferencian de las grandes firmas de auditoría y consultoría?",
     answer:
-      "Nuestro equipo reúne experiencia adquirida en algunas de las principales firmas internacionales, pero trabajamos con la agilidad y cercanía de un estudio independiente. Ofrecemos atención directa de los socios, equipos interdisciplinarios, mayor flexibilidad y soluciones adaptadas a la realidad de cada cliente. Además, contamos con un equipo especializado en Seguros y ART.",
+      "Nuestro equipo reúne experiencia adquirida en algunas de las principales firmas internacionales, pero trabajamos con la agilidad y cercanía de un estudio independiente. Ofrecemos atención directa de los socios, equipos interdisciplinarios, mayor flexibilidad y soluciones adaptadas a la realidad de cada cliente.",
   },
   {
     question: "¿Cuál es la diferencia entre auditoría externa y consultoría?",
