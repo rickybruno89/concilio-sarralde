@@ -14,8 +14,9 @@ function LogoGrid() {
           <span className="font-extrabold text-on-light">
             {" "}
             colaboramos de manera puntual con profesionales de distintas
-            especialidades y reconocida trayectoria, integrando conocimientos y
-            experiencias que aportan valor al proceso.
+            especialidades y firmas de reconocida trayectoria, trabajando como
+            un solo equipo e integrando conocimientos y experiencias que aportan
+            valor agregado al proceso.
           </span>
         </p>
         <p className="mt-6 text-base leading-relaxed text-on-light-secondary my-2">
